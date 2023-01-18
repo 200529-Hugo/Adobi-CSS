@@ -18,6 +18,9 @@ if (onePage && main && main.querySelector('nav')) {
         content.style.height = html.offsetHeight - header.offsetHeight - 1 + 'px';
         content.style.width = html.offsetWidth - mainNav.offsetWidth + 'px';
     }
+} else if (onePage && main && !main.querySelector('nav')) {
+    content.style.height = html.offsetHeight - header.offsetHeight - 1 + 'px';
+    content.style.width = html.offsetWidth + 'px';
 }
 
 // Costum stuff
@@ -31,7 +34,7 @@ function putStars() {
         star.style.background = 'red'
 
         var w = starParent.clientWidth;
-        var h = starParent.offsetHeight - 2;
+        var h = starParent.scrollHeight - 2;
         var i = 1;
         var limit = ((checkDefined(star.dataset.stars)) ? star.dataset.stars : 750)
 
@@ -91,18 +94,18 @@ setTimeout(putStars, 100);
 let hoverParentsElement = checkDefined(document.getElementsByClassName('hover-show-child'));
 if (hoverParentsElement) {
     for (const hoverParentElement of hoverParentsElement) {
-        hoverParentElement.onmouseover = function() { 
+        hoverParentElement.onmouseover = function () {
             let hoverChildsElement = hoverParentElement.getElementsByClassName('waiting-for-hover');
             for (let j = 0; j < hoverChildsElement.length; j++) {
                 const hoverChildElement = hoverChildsElement[j];
-                hoverChildElement.style.display = 'block'; 
+                hoverChildElement.style.display = 'block';
             }
         }
-        hoverParentElement.onmouseleave = function() { 
+        hoverParentElement.onmouseleave = function () {
             let hoverChildsElement = hoverParentElement.getElementsByClassName('waiting-for-hover');
             for (let j = 0; j < hoverChildsElement.length; j++) {
                 const hoverChildElement = hoverChildsElement[j];
-                hoverChildElement.style.display = 'none'; 
+                hoverChildElement.style.display = 'none';
             }
         }
     }
@@ -136,3 +139,27 @@ $(document).ready(function () {
     }
 });
 // Scroll end
+
+// Animate
+// realHeader = document.getElementById('realHeader')
+// adobi = document.getElementById('name')
+
+// function getScrollPosition() {
+//     if (window.pageYOffset) {
+//         return window.pageYOffset;
+//     } else if (document.documentElement.scrollTop) {
+//         return document.documentElement.scrollTop;
+//     } else if (document.body.scrollTop) {
+//         return document.body.scrollTop;
+//     }
+//     return 0;
+// }
+// appearHeight = adobi.offsetTop + adobi.offsetHeight + 50
+// window.onscroll = function () {
+//     scrollPos = getScrollPosition();
+//     if (scrollPos >= appearHeight) {
+//         realHeader.style.display = 'block'
+//     } else {
+//         realHeader.style.display = 'none'
+//     }
+// }
