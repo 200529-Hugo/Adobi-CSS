@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("./Domine/static/Domine-Regular.ttf") format('truetype');
+}
+
 :root{
     --ambition: 255, 176, 29;
     --hope: 255, 255, 0;
@@ -5,15 +10,17 @@
     --growth: 9, 150, 18;
     --anger: 192, 0, 0;
     --royal: 110, 1, 110;
-    --dark: 11, 11, 11;
-    --light: 255, 255, 255;
-    --darkerLight: 190, 190, 190;
-    --lighterDark: 24, 24, 24;
+    
     --darker: 0, 0, 0;
+    --dark: 15, 15, 15;
+    --lighterDark: 40, 40, 43;
+    --darkerLight: 170, 170, 170;
+    --light: 210, 210, 210;
     --lighter: 255, 255, 255;
+
     --brightless: brightness(150%);
     --brightness: brightness(50%);
-    --font: Arial, Helvetica, sans-serif;
+    --font: CustomFont;
 }
 
 /* Debug */
@@ -114,22 +121,22 @@ main nav {
 .content { display: inline-block !important }
 
 .flex { display: flex !important }
-
 .block { display: block !important }
-
 .none { display: none !important }
-
 .hidden { visibility: hidden !important }
-
 .wrap { flex-wrap: wrap !important }
+
+.flex-column { display: flex !important; flex-direction: column !important}
 
 .space-between { justify-content: space-between !important }
 .space-around { justify-content: space-around !important }
 .item-center { align-items: center !important}
 
 .item-right { justify-content: flex-end !important }
+.items-right { align-items: flex-end !important}
 
-.self-right { align-self: end !important }
+.self-right { align-self: flex-end !important }
+.selfs-right {justify-self: flex-end !important}
 
 /* Column */
 .column-2 { column-count: 2 !important }
@@ -151,7 +158,445 @@ main nav {
 .move-r { right: 0 !important }
 .move-b { bottom: 0 !important }
 
-.move-t-min1em { top: -1em !important}
+.move-l-min1px { left: -1px !important }
+.move-l-min2px { left: -2px !important }
+.move-l-min3px { left: -3px !important }
+.move-l-min4px { left: -4px !important }
+.move-l-min5px { left: -5px !important }
+.move-l-min6px { left: -6px !important }
+.move-l-min7px { left: -7px !important }
+.move-l-min8px { left: -8px !important }
+.move-l-min9px { left: -9px !important }
+.move-l-min10px { left: -10px !important }
+
+.move-l-min1pt { left: -1pt !important }
+.move-l-min2pt { left: -2pt !important }
+.move-l-min3pt { left: -3pt !important }
+.move-l-min4pt { left: -4pt !important }
+.move-l-min5pt { left: -5pt !important }
+.move-l-min6pt { left: -6pt !important }
+.move-l-min7pt { left: -7pt !important }
+.move-l-min8pt { left: -8pt !important }
+.move-l-min9pt { left: -9pt !important }
+.move-l-min10pt { left: -10pt !important }
+
+.move-l-min1em { left: -1em !important }
+.move-l-min2em { left: -2em !important }
+.move-l-min3em { left: -3em !important }
+.move-l-min4em { left: -4em !important }
+.move-l-min5em { left: -5em !important }
+.move-l-min6em { left: -6em !important }
+.move-l-min7em { left: -7em !important }
+.move-l-min8em { left: -8em !important }
+.move-l-min9em { left: -9em !important }
+.move-l-min10em { left: -10em !important }
+
+.move-l-min1per { left: -1% !important }
+.move-l-min2per { left: -2% !important }
+.move-l-min3per { left: -3% !important }
+.move-l-min4per { left: -4% !important }
+.move-l-min5per { left: -5% !important }
+.move-l-min6per { left: -6% !important }
+.move-l-min7per { left: -7% !important }
+.move-l-min8per { left: -8% !important }
+.move-l-min9per { left: -9% !important }
+.move-l-min10per { left: -10% !important }
+
+.move-l-min1ch { left: -1ch !important }
+.move-l-min2ch { left: -2ch !important }
+.move-l-min3ch { left: -3ch !important }
+.move-l-min4ch { left: -4ch !important }
+.move-l-min5ch { left: -5ch !important }
+.move-l-min6ch { left: -6ch !important }
+.move-l-min7ch { left: -7ch !important }
+.move-l-min8ch { left: -8ch !important }
+.move-l-min9ch { left: -9ch !important }
+.move-l-min10ch { left: -10ch !important }
+
+.move-t-min1px { top: -1px !important }
+.move-t-min2px { top: -2px !important }
+.move-t-min3px { top: -3px !important }
+.move-t-min4px { top: -4px !important }
+.move-t-min5px { top: -5px !important }
+.move-t-min6px { top: -6px !important }
+.move-t-min7px { top: -7px !important }
+.move-t-min8px { top: -8px !important }
+.move-t-min9px { top: -9px !important }
+.move-t-min10px { top: -10px !important }
+
+.move-t-min1pt { top: -1pt !important }
+.move-t-min2pt { top: -2pt !important }
+.move-t-min3pt { top: -3pt !important }
+.move-t-min4pt { top: -4pt !important }
+.move-t-min5pt { top: -5pt !important }
+.move-t-min6pt { top: -6pt !important }
+.move-t-min7pt { top: -7pt !important }
+.move-t-min8pt { top: -8pt !important }
+.move-t-min9pt { top: -9pt !important }
+.move-t-min10pt { top: -10pt !important }
+
+.move-t-min1em { top: -1em !important }
+.move-t-min2em { top: -2em !important }
+.move-t-min3em { top: -3em !important }
+.move-t-min4em { top: -4em !important }
+.move-t-min5em { top: -5em !important }
+.move-t-min6em { top: -6em !important }
+.move-t-min7em { top: -7em !important }
+.move-t-min8em { top: -8em !important }
+.move-t-min9em { top: -9em !important }
+.move-t-min10em { top: -10em !important }
+
+.move-t-min1per { top: -1% !important }
+.move-t-min2per { top: -2% !important }
+.move-t-min3per { top: -3% !important }
+.move-t-min4per { top: -4% !important }
+.move-t-min5per { top: -5% !important }
+.move-t-min6per { top: -6% !important }
+.move-t-min7per { top: -7% !important }
+.move-t-min8per { top: -8% !important }
+.move-t-min9per { top: -9% !important }
+.move-t-min10per { top: -10% !important }
+
+.move-t-min1ch { top: -1ch !important }
+.move-t-min2ch { top: -2ch !important }
+.move-t-min3ch { top: -3ch !important }
+.move-t-min4ch { top: -4ch !important }
+.move-t-min5ch { top: -5ch !important }
+.move-t-min6ch { top: -6ch !important }
+.move-t-min7ch { top: -7ch !important }
+.move-t-min8ch { top: -8ch !important }
+.move-t-min9ch { top: -9ch !important }
+.move-t-min10ch { top: -10ch !important }
+
+.move-r-min1px { right: -1px !important }
+.move-r-min2px { right: -2px !important }
+.move-r-min3px { right: -3px !important }
+.move-r-min4px { right: -4px !important }
+.move-r-min5px { right: -5px !important }
+.move-r-min6px { right: -6px !important }
+.move-r-min7px { right: -7px !important }
+.move-r-min8px { right: -8px !important }
+.move-r-min9px { right: -9px !important }
+.move-r-min10px { right: -10px !important }
+
+.move-r-min1pt { right: -1pt !important }
+.move-r-min2pt { right: -2pt !important }
+.move-r-min3pt { right: -3pt !important }
+.move-r-min4pt { right: -4pt !important }
+.move-r-min5pt { right: -5pt !important }
+.move-r-min6pt { right: -6pt !important }
+.move-r-min7pt { right: -7pt !important }
+.move-r-min8pt { right: -8pt !important }
+.move-r-min9pt { right: -9pt !important }
+.move-r-min10pt { right: -10pt !important }
+
+.move-r-min1em { right: -1em !important }
+.move-r-min2em { right: -2em !important }
+.move-r-min3em { right: -3em !important }
+.move-r-min4em { right: -4em !important }
+.move-r-min5em { right: -5em !important }
+.move-r-min6em { right: -6em !important }
+.move-r-min7em { right: -7em !important }
+.move-r-min8em { right: -8em !important }
+.move-r-min9em { right: -9em !important }
+.move-r-min10em { right: -10em !important }
+
+.move-r-min1per { right: -1% !important }
+.move-r-min2per { right: -2% !important }
+.move-r-min3per { right: -3% !important }
+.move-r-min4per { right: -4% !important }
+.move-r-min5per { right: -5% !important }
+.move-r-min6per { right: -6% !important }
+.move-r-min7per { right: -7% !important }
+.move-r-min8per { right: -8% !important }
+.move-r-min9per { right: -9% !important }
+.move-r-min10per { right: -10% !important }
+
+.move-r-min1ch { right: -1ch !important }
+.move-r-min2ch { right: -2ch !important }
+.move-r-min3ch { right: -3ch !important }
+.move-r-min4ch { right: -4ch !important }
+.move-r-min5ch { right: -5ch !important }
+.move-r-min6ch { right: -6ch !important }
+.move-r-min7ch { right: -7ch !important }
+.move-r-min8ch { right: -8ch !important }
+.move-r-min9ch { right: -9ch !important }
+.move-r-min10ch { right: -10ch !important }
+
+.move-b-min1px { bottom: -1px !important }
+.move-b-min2px { bottom: -2px !important }
+.move-b-min3px { bottom: -3px !important }
+.move-b-min4px { bottom: -4px !important }
+.move-b-min5px { bottom: -5px !important }
+.move-b-min6px { bottom: -6px !important }
+.move-b-min7px { bottom: -7px !important }
+.move-b-min8px { bottom: -8px !important }
+.move-b-min9px { bottom: -9px !important }
+.move-b-min10px { bottom: -10px !important }
+
+.move-b-min1pt { bottom: -1pt !important }
+.move-b-min2pt { bottom: -2pt !important }
+.move-b-min3pt { bottom: -3pt !important }
+.move-b-min4pt { bottom: -4pt !important }
+.move-b-min5pt { bottom: -5pt !important }
+.move-b-min6pt { bottom: -6pt !important }
+.move-b-min7pt { bottom: -7pt !important }
+.move-b-min8pt { bottom: -8pt !important }
+.move-b-min9pt { bottom: -9pt !important }
+.move-b-min10pt { bottom: -10pt !important }
+
+.move-b-min1em { bottom: -1em !important }
+.move-b-min2em { bottom: -2em !important }
+.move-b-min3em { bottom: -3em !important }
+.move-b-min4em { bottom: -4em !important }
+.move-b-min5em { bottom: -5em !important }
+.move-b-min6em { bottom: -6em !important }
+.move-b-min7em { bottom: -7em !important }
+.move-b-min8em { bottom: -8em !important }
+.move-b-min9em { bottom: -9em !important }
+.move-b-min10em { bottom: -10em !important }
+
+.move-b-min1per { bottom: -1% !important }
+.move-b-min2per { bottom: -2% !important }
+.move-b-min3per { bottom: -3% !important }
+.move-b-min4per { bottom: -4% !important }
+.move-b-min5per { bottom: -5% !important }
+.move-b-min6per { bottom: -6% !important }
+.move-b-min7per { bottom: -7% !important }
+.move-b-min8per { bottom: -8% !important }
+.move-b-min9per { bottom: -9% !important }
+.move-b-min10per { bottom: -10% !important }
+
+.move-b-min1ch { bottom: -1ch !important }
+.move-b-min2ch { bottom: -2ch !important }
+.move-b-min3ch { bottom: -3ch !important }
+.move-b-min4ch { bottom: -4ch !important }
+.move-b-min5ch { bottom: -5ch !important }
+.move-b-min6ch { bottom: -6ch !important }
+.move-b-min7ch { bottom: -7ch !important }
+.move-b-min8ch { bottom: -8ch !important }
+.move-b-min9ch { bottom: -9ch !important }
+.move-b-min10ch { bottom: -10ch !important }
+
+.move-l-1px { left: 1px !important }
+.move-l-2px { left: 2px !important }
+.move-l-3px { left: 3px !important }
+.move-l-4px { left: 4px !important }
+.move-l-5px { left: 5px !important }
+.move-l-6px { left: 6px !important }
+.move-l-7px { left: 7px !important }
+.move-l-8px { left: 8px !important }
+.move-l-9px { left: 9px !important }
+.move-l-10px { left: 10px !important }
+
+.move-l-1pt { left: 1pt !important }
+.move-l-2pt { left: 2pt !important }
+.move-l-3pt { left: 3pt !important }
+.move-l-4pt { left: 4pt !important }
+.move-l-5pt { left: 5pt !important }
+.move-l-6pt { left: 6pt !important }
+.move-l-7pt { left: 7pt !important }
+.move-l-8pt { left: 8pt !important }
+.move-l-9pt { left: 9pt !important }
+.move-l-10pt { left: 10pt !important }
+
+.move-l-1em { left: 1em !important }
+.move-l-2em { left: 2em !important }
+.move-l-3em { left: 3em !important }
+.move-l-4em { left: 4em !important }
+.move-l-5em { left: 5em !important }
+.move-l-6em { left: 6em !important }
+.move-l-7em { left: 7em !important }
+.move-l-8em { left: 8em !important }
+.move-l-9em { left: 9em !important }
+.move-l-10em { left: 10em !important }
+
+.move-l-1per { left: 1% !important }
+.move-l-2per { left: 2% !important }
+.move-l-3per { left: 3% !important }
+.move-l-4per { left: 4% !important }
+.move-l-5per { left: 5% !important }
+.move-l-6per { left: 6% !important }
+.move-l-7per { left: 7% !important }
+.move-l-8per { left: 8% !important }
+.move-l-9per { left: 9% !important }
+.move-l-10per { left: 10% !important }
+
+.move-l-1ch { left: 1ch !important }
+.move-l-2ch { left: 2ch !important }
+.move-l-3ch { left: 3ch !important }
+.move-l-4ch { left: 4ch !important }
+.move-l-5ch { left: 5ch !important }
+.move-l-6ch { left: 6ch !important }
+.move-l-7ch { left: 7ch !important }
+.move-l-8ch { left: 8ch !important }
+.move-l-9ch { left: 9ch !important }
+.move-l-10ch { left: 10ch !important }
+
+.move-t-1px { top: 1px !important }
+.move-t-2px { top: 2px !important }
+.move-t-3px { top: 3px !important }
+.move-t-4px { top: 4px !important }
+.move-t-5px { top: 5px !important }
+.move-t-6px { top: 6px !important }
+.move-t-7px { top: 7px !important }
+.move-t-8px { top: 8px !important }
+.move-t-9px { top: 9px !important }
+.move-t-10px { top: 10px !important }
+
+.move-t-1pt { top: 1pt !important }
+.move-t-2pt { top: 2pt !important }
+.move-t-3pt { top: 3pt !important }
+.move-t-4pt { top: 4pt !important }
+.move-t-5pt { top: 5pt !important }
+.move-t-6pt { top: 6pt !important }
+.move-t-7pt { top: 7pt !important }
+.move-t-8pt { top: 8pt !important }
+.move-t-9pt { top: 9pt !important }
+.move-t-10pt { top: 10pt !important }
+
+.move-t-1em { top: 1em !important }
+.move-t-2em { top: 2em !important }
+.move-t-3em { top: 3em !important }
+.move-t-4em { top: 4em !important }
+.move-t-5em { top: 5em !important }
+.move-t-6em { top: 6em !important }
+.move-t-7em { top: 7em !important }
+.move-t-8em { top: 8em !important }
+.move-t-9em { top: 9em !important }
+.move-t-10em { top: 10em !important }
+
+.move-t-1per { top: 1% !important }
+.move-t-2per { top: 2% !important }
+.move-t-3per { top: 3% !important }
+.move-t-4per { top: 4% !important }
+.move-t-5per { top: 5% !important }
+.move-t-6per { top: 6% !important }
+.move-t-7per { top: 7% !important }
+.move-t-8per { top: 8% !important }
+.move-t-9per { top: 9% !important }
+.move-t-10per { top: 10% !important }
+
+.move-t-1ch { top: 1ch !important }
+.move-t-2ch { top: 2ch !important }
+.move-t-3ch { top: 3ch !important }
+.move-t-4ch { top: 4ch !important }
+.move-t-5ch { top: 5ch !important }
+.move-t-6ch { top: 6ch !important }
+.move-t-7ch { top: 7ch !important }
+.move-t-8ch { top: 8ch !important }
+.move-t-9ch { top: 9ch !important }
+.move-t-10ch { top: 10ch !important }
+
+.move-r-1px { right: 1px !important }
+.move-r-2px { right: 2px !important }
+.move-r-3px { right: 3px !important }
+.move-r-4px { right: 4px !important }
+.move-r-5px { right: 5px !important }
+.move-r-6px { right: 6px !important }
+.move-r-7px { right: 7px !important }
+.move-r-8px { right: 8px !important }
+.move-r-9px { right: 9px !important }
+.move-r-10px { right: 10px !important }
+
+.move-r-1pt { right: 1pt !important }
+.move-r-2pt { right: 2pt !important }
+.move-r-3pt { right: 3pt !important }
+.move-r-4pt { right: 4pt !important }
+.move-r-5pt { right: 5pt !important }
+.move-r-6pt { right: 6pt !important }
+.move-r-7pt { right: 7pt !important }
+.move-r-8pt { right: 8pt !important }
+.move-r-9pt { right: 9pt !important }
+.move-r-10pt { right: 10pt !important }
+
+.move-r-1em { right: 1em !important }
+.move-r-2em { right: 2em !important }
+.move-r-3em { right: 3em !important }
+.move-r-4em { right: 4em !important }
+.move-r-5em { right: 5em !important }
+.move-r-6em { right: 6em !important }
+.move-r-7em { right: 7em !important }
+.move-r-8em { right: 8em !important }
+.move-r-9em { right: 9em !important }
+.move-r-10em { right: 10em !important }
+
+.move-r-1per { right: 1% !important }
+.move-r-2per { right: 2% !important }
+.move-r-3per { right: 3% !important }
+.move-r-4per { right: 4% !important }
+.move-r-5per { right: 5% !important }
+.move-r-6per { right: 6% !important }
+.move-r-7per { right: 7% !important }
+.move-r-8per { right: 8% !important }
+.move-r-9per { right: 9% !important }
+.move-r-10per { right: 10% !important }
+
+.move-r-1ch { right: 1ch !important }
+.move-r-2ch { right: 2ch !important }
+.move-r-3ch { right: 3ch !important }
+.move-r-4ch { right: 4ch !important }
+.move-r-5ch { right: 5ch !important }
+.move-r-6ch { right: 6ch !important }
+.move-r-7ch { right: 7ch !important }
+.move-r-8ch { right: 8ch !important }
+.move-r-9ch { right: 9ch !important }
+.move-r-10ch { right: 10ch !important }
+
+.move-b-1px { bottom: 1px !important }
+.move-b-2px { bottom: 2px !important }
+.move-b-3px { bottom: 3px !important }
+.move-b-4px { bottom: 4px !important }
+.move-b-5px { bottom: 5px !important }
+.move-b-6px { bottom: 6px !important }
+.move-b-7px { bottom: 7px !important }
+.move-b-8px { bottom: 8px !important }
+.move-b-9px { bottom: 9px !important }
+.move-b-10px { bottom: 10px !important }
+
+.move-b-1pt { bottom: 1pt !important }
+.move-b-2pt { bottom: 2pt !important }
+.move-b-3pt { bottom: 3pt !important }
+.move-b-4pt { bottom: 4pt !important }
+.move-b-5pt { bottom: 5pt !important }
+.move-b-6pt { bottom: 6pt !important }
+.move-b-7pt { bottom: 7pt !important }
+.move-b-8pt { bottom: 8pt !important }
+.move-b-9pt { bottom: 9pt !important }
+.move-b-10pt { bottom: 10pt !important }
+
+.move-b-1em { bottom: 1em !important }
+.move-b-2em { bottom: 2em !important }
+.move-b-3em { bottom: 3em !important }
+.move-b-4em { bottom: 4em !important }
+.move-b-5em { bottom: 5em !important }
+.move-b-6em { bottom: 6em !important }
+.move-b-7em { bottom: 7em !important }
+.move-b-8em { bottom: 8em !important }
+.move-b-9em { bottom: 9em !important }
+.move-b-10em { bottom: 10em !important }
+
+.move-b-1per { bottom: 1% !important }
+.move-b-2per { bottom: 2% !important }
+.move-b-3per { bottom: 3% !important }
+.move-b-4per { bottom: 4% !important }
+.move-b-5per { bottom: 5% !important }
+.move-b-6per { bottom: 6% !important }
+.move-b-7per { bottom: 7% !important }
+.move-b-8per { bottom: 8% !important }
+.move-b-9per { bottom: 9% !important }
+.move-b-10per { bottom: 10% !important }
+
+.move-b-1ch { bottom: 1ch !important }
+.move-b-2ch { bottom: 2ch !important }
+.move-b-3ch { bottom: 3ch !important }
+.move-b-4ch { bottom: 4ch !important }
+.move-b-5ch { bottom: 5ch !important }
+.move-b-6ch { bottom: 6ch !important }
+.move-b-7ch { bottom: 7ch !important }
+.move-b-8ch { bottom: 8ch !important }
+.move-b-9ch { bottom: 9ch !important }
+.move-b-10ch { bottom: 10ch !important }
 
 .move-hm {
     right: 50%;
@@ -207,6 +652,7 @@ main nav {
 .width-7per { width: 70% !important }
 .width-8per { width: 80% !important }
 .width-9per { width: 90% !important }
+.width-95per { width: 95% !important }
 .width-10per { width: 100% !important }
 
 .width-1px { width: 10px !important }
@@ -255,6 +701,7 @@ main nav {
 
 /* Height */
 .heigt-fit { height: fit-content !important }
+
 .height-1per { height: 10% !important}
 .height-2per { height: 20% !important}
 .height-3per { height: 30% !important}
@@ -265,6 +712,50 @@ main nav {
 .height-8per { height: 80% !important}
 .height-9per { height: 90% !important}
 .height-10per { height: 100% !important}
+
+.height-1px { height: 1px !important}
+.height-2px { height: 2px !important}
+.height-3px { height: 3px !important}
+.height-4px { height: 4px !important}
+.height-5px { height: 5px !important}
+.height-6px { height: 6px !important}
+.height-7px { height: 7px !important}
+.height-8px { height: 8px !important}
+.height-9px { height: 9px !important}
+.height-10px { height: 10px !important}
+
+.height-1pt { height: 1pt !important}
+.height-2pt { height: 2pt !important}
+.height-3pt { height: 3pt !important}
+.height-4pt { height: 4pt !important}
+.height-5pt { height: 5pt !important}
+.height-6pt { height: 6pt !important}
+.height-7pt { height: 7pt !important}
+.height-8pt { height: 8pt !important}
+.height-9pt { height: 9pt !important}
+.height-10pt { height: 10pt !important}
+
+.height-1em { height: 1em !important}
+.height-2em { height: 2em !important}
+.height-3em { height: 3em !important}
+.height-4em { height: 4em !important}
+.height-5em { height: 5em !important}
+.height-6em { height: 6em !important}
+.height-7em { height: 7em !important}
+.height-8em { height: 8em !important}
+.height-9em { height: 9em !important}
+.height-10em { height: 10em !important}
+
+.height-1ch { height: 1ch !important}
+.height-2ch { height: 2ch !important}
+.height-3ch { height: 3ch !important}
+.height-4ch { height: 4ch !important}
+.height-5ch { height: 5ch !important}
+.height-6ch { height: 6ch !important}
+.height-7ch { height: 7ch !important}
+.height-8ch { height: 8ch !important}
+.height-9ch { height: 9ch !important}
+.height-10ch { height: 10ch !important}
 
 /* Text colours */
 .ambition { color: rgb(var(--ambition)) !important }
@@ -300,6 +791,64 @@ main nav {
 .underline { text-decoration-line: underline !important}
 .overline { text-decoration-line: overline !important} 
 
+/* Letter spacing */
+.font-space-0 { letter-spacing: 0 !important}
+
+.font-space-1px { letter-spacing: 1px !important }
+.font-space-2px { letter-spacing: 2px !important }
+.font-space-3px { letter-spacing: 3px !important }
+.font-space-4px { letter-spacing: 4px !important }
+.font-space-5px { letter-spacing: 5px !important }
+.font-space-6px { letter-spacing: 6px !important }
+.font-space-7px { letter-spacing: 7px !important }
+.font-space-8px { letter-spacing: 8px !important }
+.font-space-9px { letter-spacing: 9px !important }
+.font-space-10px { letter-spacing: 10px !important }
+
+.font-space-1pt { letter-spacing: 1pt !important }
+.font-space-2pt { letter-spacing: 2pt !important }
+.font-space-3pt { letter-spacing: 3pt !important }
+.font-space-4pt { letter-spacing: 4pt !important }
+.font-space-5pt { letter-spacing: 5pt !important }
+.font-space-6pt { letter-spacing: 6pt !important }
+.font-space-7pt { letter-spacing: 7pt !important }
+.font-space-8pt { letter-spacing: 8pt !important }
+.font-space-9pt { letter-spacing: 9pt !important }
+.font-space-10pt { letter-spacing: 10pt !important }
+
+.font-space-1em { letter-spacing: 1em !important }
+.font-space-2em { letter-spacing: 2em !important }
+.font-space-3em { letter-spacing: 3em !important }
+.font-space-4em { letter-spacing: 4em !important }
+.font-space-5em { letter-spacing: 5em !important }
+.font-space-6em { letter-spacing: 6em !important }
+.font-space-7em { letter-spacing: 7em !important }
+.font-space-8em { letter-spacing: 8em !important }
+.font-space-9em { letter-spacing: 9em !important }
+.font-space-10em { letter-spacing: 10em !important }
+
+.font-space-1per { letter-spacing: 1% !important }
+.font-space-2per { letter-spacing: 2% !important }
+.font-space-3per { letter-spacing: 3% !important }
+.font-space-4per { letter-spacing: 4% !important }
+.font-space-5per { letter-spacing: 5% !important }
+.font-space-6per { letter-spacing: 6% !important }
+.font-space-7per { letter-spacing: 7% !important }
+.font-space-8per { letter-spacing: 8% !important }
+.font-space-9per { letter-spacing: 9% !important }
+.font-space-10per { letter-spacing: 10% !important }
+
+.font-space-1ch { letter-spacing: 1ch !important }
+.font-space-2ch { letter-spacing: 2ch !important }
+.font-space-3ch { letter-spacing: 3ch !important }
+.font-space-4ch { letter-spacing: 4ch !important }
+.font-space-5ch { letter-spacing: 5ch !important }
+.font-space-6ch { letter-spacing: 6ch !important }
+.font-space-7ch { letter-spacing: 7ch !important }
+.font-space-8ch { letter-spacing: 8ch !important }
+.font-space-9ch { letter-spacing: 9ch !important }
+.font-space-10ch { letter-spacing: 10ch !important }
+
 /* Background colours */
 .ground-ambition { background-color: rgb(var(--ambition)) !important; }
 .ground-hope { background-color: rgb(var(--hope)) !important; }
@@ -313,6 +862,19 @@ main nav {
 .ground-darkerLight { background-color: rgb(var(--darkerLight)) !important; }
 .ground-darker{ background-color: rgb(var(--darker)) !important }
 .ground-lighter{ background-color: rgb(var(--lighter)) !important }
+
+.transground-ambition { background-color: rgba(var(--ambition),0.5) !important; }
+.transground-hope { background-color: rgba(var(--hope),0.5) !important; }
+.transground-justice { background-color: rgba(var(--justice),0.5) !important; }
+.transground-growth { background-color: rgba(var(--growth),0.5) !important; }
+.transground-anger { background-color: rgba(var(--anger),0.5) !important; }
+.transground-royal { background-color: rgba(var(--royal),0.5) !important; }
+.transground-dark { background-color: rgba(var(--dark),0.5) !important; }
+.transground-lighterDark { background-color: rgba(var(--lighterDark),0.5) !important; }
+.transground-light { background-color: rgba(var(--light),0.5) !important; }
+.transground-darkerLight { background-color: rgba(var(--darkerLight),0.5) !important; }
+.transground-darker{ background-color: rgba(var(--darker),0.5) !important }
+.transground-lighter{ background-color: rgba(var(--lighter),0.5) !important }
 
 /* Border colours */
 .border-ambition { border-color: rgb(var(--ambition)) !important;}
@@ -1352,23 +1914,63 @@ main nav {
 .blur-darker{ box-shadow: 0px 0px 4px 4px rgb(var(--darker)) !important}
 .blur-lighter{ box-shadow: 0px 0px 4px 4px rgb(var(--lighter)) !important}
 
-.blur-inset-ambition { box-shadow: inset 0px 0px 34px 10px rgb(var(--ambition)) !important }
+.blur-inset-ambition{ box-shadow: inset 0px 57px 61px -25px rgba(var(--ambition),0.75) !important }
+.blur-inset-hope{ box-shadow: inset 0px 57px 61px -25px rgba(var(--hope),0.75) !important }
+.blur-inset-justice{ box-shadow: inset 0px 57px 61px -25px rgba(var(--justice),0.75) !important }
+.blur-inset-growth{ box-shadow: inset 0px 57px 61px -25px rgba(var(--growth),0.75) !important }
+.blur-inset-anger{ box-shadow: inset 0px 57px 61px -25px rgba(var(--anger),0.75) !important }
+.blur-inset-royal{ box-shadow: inset 0px 57px 61px -25px rgba(var(--royal),0.75) !important }
+.blur-inset-dark{ box-shadow: inset 0px 57px 61px -25px rgba(var(--dark),0.75) !important }
+.blur-inset-lighterDark{ box-shadow: inset 0px 57px 61px -25px rgba(var(--lighterDark),0.75) !important }
+.blur-inset-darker{ box-shadow: inset 0px 57px 61px -25px rgba(var(--darker),0.75) !important }
+.blur-inset-light{ box-shadow: inset 0px 57px 61px -25px rgba(var(--light),0.75) !important }
+.blur-inset-darkerLight{ box-shadow: inset 0px 57px 61px -25px rgba(var(--darkerLight),0.75) !important }
+.blur-inset-lighter{ box-shadow: inset 0px 57px 61px -25px rgba(var(--lighter),0.75) !important }
 
 .shadow-bl-inset-dark {box-shadow: inset 8px -10px 45px -20px rgba(var(--dark),0.75);}
 
+/* Hover blur */
+.hover-blur-ambition:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--ambition)) !important }
+.hover-blur-hope:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--hope)) !important }
+.hover-blur-justice:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--justice)) !important }
+.hover-blur-growth:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--growth)) !important }
+.hover-blur-anger:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--anger)) !important }
+.hover-blur-royal:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--royal)) !important }
+.hover-blur-dark:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--dark)) !important }
+.hover-blur-lighterDark:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--lighterDark)) !important }
+.hover-blur-light:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--light)) !important }
+.hover-blur-darkerLight:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--darkerLight)) !important }
+.hover-blur-darker:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--darker)) !important}
+.hover-blur-lighter:hover{ box-shadow: 0px 0px 4px 4px rgb(var(--lighter)) !important}
+
 /* Glow */
-.glow-whole-ambition { box-shadow: inset 0px 0px 34px 10px rgba(var(--ambition), 0.5), 0px 0px 34px 23px rgba(var(--ambition), 0.5) !important }
-.glow-whole-hope { box-shadow: inset 0px 0px 34px 10px rgba(var(--hope), 0.5), 0px 0px 34px 23px rgba(var(--hope), 0.5) !important }
-.glow-whole-justice { box-shadow: inset 0px 0px 34px 10px rgba(var(--justice), 0.5), 0px 0px 34px 23px rgba(var(--justice), 0.5) !important }
-.glow-whole-growth { box-shadow: inset 0px 0px 34px 10px rgba(var(--growth), 0.5), 0px 0px 34px 23px rgba(var(--growth), 0.5) !important }
-.glow-whole-anger { box-shadow: inset 0px 0px 34px 10px rgba(var(--anger), 0.5), 0px 0px 34px 23px rgba(var(--anger), 0.5) !important }
-.glow-whole-royal { box-shadow: inset 0px 0px 34px 10px rgba(var(--royal), 0.5), 0px 0px 34px 23px rgba(var(--royal), 0.5) !important }
-.glow-whole-dark { box-shadow: inset 0px 0px 34px 10px rgba(var(--dark), 0.5), 0px 0px 34px 23px rgba(var(--dark), 0.5) !important }
-.glow-whole-lighterDark { box-shadow: inset 0px 0px 34px 10px rgba(var(--lighterDark), 0.5), 0px 0px 34px 23px rgba(var(--lighterDark), 0.5) !important }
-.glow-whole-light { box-shadow: inset 0px 0px 34px 10px rgba(var(--light), 0.5), 0px 0px 34px 23px rgba(var(--light), 0.5) !important }
-.glow-whole-darkerLight { box-shadow: inset 0px 0px 34px 10px rgba(var(--darkerLight), 0.5), 0px 0px 34px 23px rgba(var(--darkerLight), 0.5) !important }
-.glow-whole-darker { box-shadow: inset 0px 0px 34px 10px rgba(var(--darker), 0.5), 0px 0px 34px 23px rgba(var(--darker), 0.5) !important}
-.glow-whole-lighter { box-shadow: inset 0px 0px 34px 10px rgba(var(--lighter), 0.5), 0px 0px 34px 23px rgba(var(--lighter), 0.5) !important}
+.glow-ambition { box-shadow: inset 0px 0px 34px 10px rgba(var(--ambition), 0.5), 0px 0px 34px 23px rgba(var(--ambition), 0.5) !important }
+.glow-hope { box-shadow: inset 0px 0px 34px 10px rgba(var(--hope), 0.5), 0px 0px 34px 23px rgba(var(--hope), 0.5) !important }
+.glow-justice { box-shadow: inset 0px 0px 34px 10px rgba(var(--justice), 0.5), 0px 0px 34px 23px rgba(var(--justice), 0.5) !important }
+.glow-growth { box-shadow: inset 0px 0px 34px 10px rgba(var(--growth), 0.5), 0px 0px 34px 23px rgba(var(--growth), 0.5) !important }
+.glow-anger { box-shadow: inset 0px 0px 34px 10px rgba(var(--anger), 0.5), 0px 0px 34px 23px rgba(var(--anger), 0.5) !important }
+.glow-royal { box-shadow: inset 0px 0px 34px 10px rgba(var(--royal), 0.5), 0px 0px 34px 23px rgba(var(--royal), 0.5) !important }
+.glow-dark { box-shadow: inset 0px 0px 34px 10px rgba(var(--dark), 0.5), 0px 0px 34px 23px rgba(var(--dark), 0.5) !important }
+.glow-lighterDark { box-shadow: inset 0px 0px 34px 10px rgba(var(--lighterDark), 0.5), 0px 0px 34px 23px rgba(var(--lighterDark), 0.5) !important }
+.glow-light { box-shadow: inset 0px 0px 34px 10px rgba(var(--light), 0.5), 0px 0px 34px 23px rgba(var(--light), 0.5) !important }
+.glow-darkerLight { box-shadow: inset 0px 0px 34px 10px rgba(var(--darkerLight), 0.5), 0px 0px 34px 23px rgba(var(--darkerLight), 0.5) !important }
+.glow-darker { box-shadow: inset 0px 0px 34px 10px rgba(var(--darker), 0.5), 0px 0px 34px 23px rgba(var(--darker), 0.5) !important}
+.glow-lighter { box-shadow: inset 0px 0px 34px 10px rgba(var(--lighter), 0.5), 0px 0px 34px 23px rgba(var(--lighter), 0.5) !important}
+
+/* Hover glow */
+.hover-glow-ambition:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--ambition), 0.5), 0px 0px 34px 23px rgba(var(--ambition), 0.5) !important }
+.hover-glow-hope:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--hope), 0.5), 0px 0px 34px 23px rgba(var(--hope), 0.5) !important }
+.hover-glow-justice:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--justice), 0.5), 0px 0px 34px 23px rgba(var(--justice), 0.5) !important }
+.hover-glow-growth:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--growth), 0.5), 0px 0px 34px 23px rgba(var(--growth), 0.5) !important }
+.hover-glow-anger:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--anger), 0.5), 0px 0px 34px 23px rgba(var(--anger), 0.5) !important }
+.hover-glow-royal:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--royal), 0.5), 0px 0px 34px 23px rgba(var(--royal), 0.5) !important }
+.hover-glow-dark:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--dark), 0.5), 0px 0px 34px 23px rgba(var(--dark), 0.5) !important }
+.hover-glow-lighterDark:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--lighterDark), 0.5), 0px 0px 34px 23px rgba(var(--lighterDark), 0.5) !important }
+.hover-glow-light:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--light), 0.5), 0px 0px 34px 23px rgba(var(--light), 0.5) !important }
+.hover-glow-darkerLight:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--darkerLight), 0.5), 0px 0px 34px 23px rgba(var(--darkerLight), 0.5) !important }
+.hover-glow-darker:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--darker), 0.5), 0px 0px 34px 23px rgba(var(--darker), 0.5) !important}
+.hover-glow-lighter:hover{ box-shadow: inset 0px 0px 34px 10px rgba(var(--lighter), 0.5), 0px 0px 34px 23px rgba(var(--lighter), 0.5) !important}
+
 
 /* Overflow */
 .overflow-x{
