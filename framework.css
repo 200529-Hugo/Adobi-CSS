@@ -130,6 +130,7 @@ main nav {
 
 .space-between { justify-content: space-between !important }
 .space-around { justify-content: space-around !important }
+.space-evenly { justify-content: space-evenly !important }
 .item-center { align-items: center !important}
 
 .item-right { justify-content: flex-end !important }
@@ -863,18 +864,18 @@ main nav {
 .ground-darker{ background-color: rgb(var(--darker)) !important }
 .ground-lighter{ background-color: rgb(var(--lighter)) !important }
 
-.transground-ambition { background-color: rgba(var(--ambition),0.5) !important; }
-.transground-hope { background-color: rgba(var(--hope),0.5) !important; }
-.transground-justice { background-color: rgba(var(--justice),0.5) !important; }
-.transground-growth { background-color: rgba(var(--growth),0.5) !important; }
-.transground-anger { background-color: rgba(var(--anger),0.5) !important; }
-.transground-royal { background-color: rgba(var(--royal),0.5) !important; }
-.transground-dark { background-color: rgba(var(--dark),0.5) !important; }
-.transground-lighterDark { background-color: rgba(var(--lighterDark),0.5) !important; }
-.transground-light { background-color: rgba(var(--light),0.5) !important; }
-.transground-darkerLight { background-color: rgba(var(--darkerLight),0.5) !important; }
-.transground-darker{ background-color: rgba(var(--darker),0.5) !important }
-.transground-lighter{ background-color: rgba(var(--lighter),0.5) !important }
+.transground-ambition { background-color: rgba(var(--ambition),0.75) !important; }
+.transground-hope { background-color: rgba(var(--hope),0.75) !important; }
+.transground-justice { background-color: rgba(var(--justice),0.75) !important; }
+.transground-growth { background-color: rgba(var(--growth),0.75) !important; }
+.transground-anger { background-color: rgba(var(--anger),0.75) !important; }
+.transground-royal { background-color: rgba(var(--royal),0.75) !important; }
+.transground-dark { background-color: rgba(var(--dark),0.75) !important; }
+.transground-lighterDark { background-color: rgba(var(--lighterDark),0.75) !important; }
+.transground-light { background-color: rgba(var(--light),0.75) !important; }
+.transground-darkerLight { background-color: rgba(var(--darkerLight),0.75) !important; }
+.transground-darker{ background-color: rgba(var(--darker),0.75) !important }
+.transground-lighter{ background-color: rgba(var(--lighter),0.75) !important }
 
 /* Border colours */
 .border-ambition { border-color: rgb(var(--ambition)) !important;}
@@ -2162,8 +2163,22 @@ label {
     .phone-hidden{ display: none }
     .phone-show{ display: block }
 
+    .phone-font-xxs { font-size: xx-small !important }
+    .phone-font-xs { font-size: x-small !important }
+    .phone-font-ss { font-size: smaller !important }
+    .phone-font-s { font-size: small !important }
+    .phone-font-m { font-size: medium !important }
+    .phone-font-l { font-size: large !important }
+    .phone-font-ll { font-size: larger !important }
+    .phone-font-xl { font-size: x-large !important}
+    .phone-font-xxl { font-size: xx-large !important }
+
+    .phone-width-fit { width: fit-content !important }
+
     .phone-width-1per { width: 10% !important }
+    .phone-width-15per { width: 15% !important }
     .phone-width-2per { width: 20% !important }
+    .phone-width-25per { width: 25% !important}
     .phone-width-3per { width: 30% !important }
     .phone-width-4per { width: 40% !important }
     .phone-width-5per { width: 50% !important }
@@ -2171,14 +2186,883 @@ label {
     .phone-width-7per { width: 70% !important }
     .phone-width-8per { width: 80% !important }
     .phone-width-9per { width: 90% !important }
+    .phone-width-95per { width: 95% !important }
     .phone-width-10per { width: 100% !important }
+
+    .phone-width-1px { width: 10px !important }
+    .phone-width-2px { width: 20px !important }
+    .phone-width-3px { width: 30px !important }
+    .phone-width-4px { width: 40px !important }
+    .phone-width-5px { width: 50px !important }
+    .phone-width-6px { width: 60px !important }
+    .phone-width-7px { width: 70px !important }
+    .phone-width-8px { width: 80px !important }
+    .phone-width-9px { width: 90px !important }
+    .phone-width-10px { width: 100px !important }
+
+    .phone-width-1pt { width: 10pt !important }
+    .phone-width-2pt { width: 20pt !important }
+    .phone-width-3pt { width: 30pt !important }
+    .phone-width-4pt { width: 40pt !important }
+    .phone-width-5pt { width: 50pt !important }
+    .phone-width-6pt { width: 60pt !important }
+    .phone-width-7pt { width: 70pt !important }
+    .phone-width-8pt { width: 80pt !important }
+    .phone-width-9pt { width: 90pt !important }
+    .phone-width-10pt { width: 100pt !important }
+
+    .phone-width-1em { width: 1em !important }
+    .phone-width-2em { width: 2em !important }
+    .phone-width-3em { width: 3em !important }
+    .phone-width-4em { width: 4em !important }
+    .phone-width-5em { width: 5em !important }
+    .phone-width-6em { width: 6em !important }
+    .phone-width-7em { width: 7em !important }
+    .phone-width-8em { width: 8em !important }
+    .phone-width-9em { width: 9em !important }
+    .phone-width-10em { width: 10em !important }
+
+    .phone-width-1ch { width: 1ch !important }
+    .phone-width-2ch { width: 2ch !important }
+    .phone-width-3ch { width: 3ch !important }
+    .phone-width-4ch { width: 4ch !important }
+    .phone-width-5ch { width: 5ch !important }
+    .phone-width-6ch { width: 6ch !important }
+    .phone-width-7ch { width: 7ch !important }
+    .phone-width-8ch { width: 8ch !important }
+    .phone-width-9ch { width: 9ch !important }
+    .phone-width-10ch { width: 10ch !important }
+
+    /* Margin Begin*/
+    .phone-m-0 { margin: 0}
+    .phone-m-auto { margin: auto }
+    .phone-ml-auto { margin-left: auto}
+    .phone-m-inherit { margin: inherit }
+    .phone-m-initial { margin: initial }
+    .phone-m-unset { margin: unset }
+
+    /* Margin PX */
+    .phone-m-1px { margin: 1px !important }
+    .phone-m-2px { margin: 2px !important }
+    .phone-m-3px { margin: 3px !important }
+    .phone-m-4px { margin: 4px !important }
+    .phone-m-5px { margin: 5px !important }
+    .phone-m-6px { margin: 6px !important }
+    .phone-m-7px { margin: 7px !important }
+    .phone-m-8px { margin: 8px !important }
+    .phone-m-9px { margin: 9px !important }
+    .phone-m-10px { margin: 10px !important }
+
+    /* Margin PT */
+    .phone-m-1pt{ margin: 1pt !important }
+    .phone-m-2pt{ margin: 2pt !important }
+    .phone-m-3pt{ margin: 3pt !important }
+    .phone-m-4pt{ margin: 4pt !important }
+    .phone-m-5pt{ margin: 5pt !important }
+    .phone-m-6pt{ margin: 6pt !important }
+    .phone-m-7pt{ margin: 7pt !important }
+    .phone-m-8pt{ margin: 8pt !important }
+    .phone-m-9pt{ margin: 9pt !important }
+    .phone-m-10pt{ margin: 10pt !important }
+
+    /* Margin EM */
+    .phone-m-1em { margin: 1em !important }
+    .phone-m-2em { margin: 2em !important }
+    .phone-m-3em { margin: 3em !important }
+    .phone-m-4em { margin: 4em !important }
+    .phone-m-5em { margin: 5em !important }
+    .phone-m-6em { margin: 6em !important }
+    .phone-m-7em { margin: 7em !important }
+    .phone-m-8em { margin: 8em !important }
+    .phone-m-9em { margin: 9em !important }
+    .phone-m-10pt{ margin: 10em !important; }
+
+    /* Margin percentage */
+    .phone-m-1per { margin: 10% !important }
+    .phone-m-2per { margin: 20% !important }
+    .phone-m-3per { margin: 30% !important }
+    .phone-m-4per { margin: 40% !important }
+    .phone-m-5per { margin: 50% !important }
+    .phone-m-6per { margin: 60% !important }
+    .phone-m-7per { margin: 70% !important }
+    .phone-m-8per { margin: 80% !important }
+    .phone-m-9per { margin: 90% !important }
+    .phone-m-10per { margin: 100% !important }
+
+    /* Margin CH */
+    .phone-m-1ch { margin: 1ch !important }
+    .phone-m-2ch { margin: 2ch !important }
+    .phone-m-3ch { margin: 3ch !important }
+    .phone-m-4ch { margin: 4ch !important }
+    .phone-m-5ch { margin: 5ch !important }
+    .phone-m-6ch { margin: 6ch !important }
+    .phone-m-7ch { margin: 7ch !important }
+    .phone-m-8ch { margin: 8ch !important }
+    .phone-m-9ch { margin: 9ch !important }
+    .phone-m-10ch { margin: 10ch !important }
+
+    .phone-mv-0 { margin-top: 0px !important; margin-bottom: 0px !important;}
+
+    .phone-mv-1px { margin-top: 1px !important; margin-bottom: 1px !important;}
+    .phone-mv-2px { margin-top: 2px !important; margin-bottom: 2px !important;}
+    .phone-mv-3px { margin-top: 3px !important; margin-bottom: 3px !important;}
+    .phone-mv-4px { margin-top: 4px !important; margin-bottom: 4px !important;}
+    .phone-mv-5px { margin-top: 5px !important; margin-bottom: 5px !important;}
+    .phone-mv-6px { margin-top: 6px !important; margin-bottom: 6px !important;}
+    .phone-mv-7px { margin-top: 7px !important; margin-bottom: 7px !important;}
+    .phone-mv-8px { margin-top: 8px !important; margin-bottom: 8px !important;}
+    .phone-mv-9px { margin-top: 9px !important; margin-bottom: 9px !important;}
+    .phone-mv-10px { margin-top: 10px !important; margin-bottom: 10px !important;}
+
+    .phone-mv-1pt { margin-top: 1pt !important; margin-bottom: 1pt !important;}
+    .phone-mv-2pt { margin-top: 2pt !important; margin-bottom: 2pt !important;}
+    .phone-mv-3pt { margin-top: 3pt !important; margin-bottom: 3pt !important;}
+    .phone-mv-4pt { margin-top: 4pt !important; margin-bottom: 4pt !important;}
+    .phone-mv-5pt { margin-top: 5pt !important; margin-bottom: 5pt !important;}
+    .phone-mv-6pt { margin-top: 6pt !important; margin-bottom: 6pt !important;}
+    .phone-mv-7pt { margin-top: 7pt !important; margin-bottom: 7pt !important;}
+    .phone-mv-8pt { margin-top: 8pt !important; margin-bottom: 8pt !important;}
+    .phone-mv-9pt { margin-top: 9pt !important; margin-bottom: 9pt !important;}
+    .phone-mv-10pt { margin-top: 10pt !important; margin-bottom: 10pt !important;}
+
+    .phone-mv-1em { margin-top: 1em !important; margin-bottom: 1em !important;}
+    .phone-mv-2em { margin-top: 2em !important; margin-bottom: 2em !important;}
+    .phone-mv-3em { margin-top: 3em !important; margin-bottom: 3em !important;}
+    .phone-mv-4em { margin-top: 4em !important; margin-bottom: 4em !important;}
+    .phone-mv-5em { margin-top: 5em !important; margin-bottom: 5em !important;}
+    .phone-mv-6em { margin-top: 6em !important; margin-bottom: 6em !important;}
+    .phone-mv-7em { margin-top: 7em !important; margin-bottom: 7em !important;}
+    .phone-mv-8em { margin-top: 8em !important; margin-bottom: 8em !important;}
+    .phone-mv-9em { margin-top: 9em !important; margin-bottom: 9em !important;}
+    .phone-mv-10em { margin-top: 10em !important; margin-bottom: 10em !important;}
+
+    .phone-mv-1per { margin-top: 10% !important; margin-bottom: 10% !important;}
+    .phone-mv-2per { margin-top: 20% !important; margin-bottom: 20% !important;}
+    .phone-mv-3per { margin-top: 30% !important; margin-bottom: 30% !important;}
+    .phone-mv-4per { margin-top: 40% !important; margin-bottom: 40% !important;}
+    .phone-mv-5per { margin-top: 50% !important; margin-bottom: 50% !important;}
+    .phone-mv-6per { margin-top: 60% !important; margin-bottom: 60% !important;}
+    .phone-mv-7per { margin-top: 70% !important; margin-bottom: 70% !important;}
+    .phone-mv-8per { margin-top: 80% !important; margin-bottom: 80% !important;}
+    .phone-mv-9per { margin-top: 90% !important; margin-bottom: 90% !important;}
+    .phone-mv-10per { margin-top: 100% !important; margin-bottom: 100% !important;}
+
+    .phone-mv-1ch { margin-top: 1ch !important; margin-bottom: 1ch !important;}
+    .phone-mv-2ch { margin-top: 2ch !important; margin-bottom: 2ch !important;}
+    .phone-mv-3ch { margin-top: 3ch !important; margin-bottom: 3ch !important;}
+    .phone-mv-4ch { margin-top: 4ch !important; margin-bottom: 4ch !important;}
+    .phone-mv-5ch { margin-top: 5ch !important; margin-bottom: 5ch !important;}
+    .phone-mv-6ch { margin-top: 6ch !important; margin-bottom: 6ch !important;}
+    .phone-mv-7ch { margin-top: 7ch !important; margin-bottom: 7ch !important;}
+    .phone-mv-8ch { margin-top: 8ch !important; margin-bottom: 8ch !important;}
+    .phone-mv-9ch { margin-top: 9ch !important; margin-bottom: 9ch !important;}
+    .phone-mv-10ch { margin-top: 10ch !important; margin-bottom: 10ch !important;}
+
+    .phone-mh-0 { margin-right: 0px !important; margin-left: 0px !important; }
+
+    .phone-mh-1px { margin-right: 1px !important; margin-left: 1px !important;}
+    .phone-mh-2px { margin-right: 2px !important; margin-left: 2px !important;}
+    .phone-mh-3px { margin-right: 3px !important; margin-left: 3px !important;}
+    .phone-mh-4px { margin-right: 4px !important; margin-left: 4px !important;}
+    .phone-mh-5px { margin-right: 5px !important; margin-left: 5px !important;}
+    .phone-mh-6px { margin-right: 6px !important; margin-left: 6px !important;}
+    .phone-mh-7px { margin-right: 7px !important; margin-left: 7px !important;}
+    .phone-mh-8px { margin-right: 8px !important; margin-left: 8px !important;}
+    .phone-mh-9px { margin-right: 9px !important; margin-left: 9px !important;}
+    .phone-mh-10px { margin-right: 10px !important; margin-left: 10px !important;}
+
+    .phone-mh-1pt { margin-right: 1pt !important; margin-left: 1pt !important;}
+    .phone-mh-2pt { margin-right: 2pt !important; margin-left: 2pt !important;}
+    .phone-mh-3pt { margin-right: 3pt !important; margin-left: 3pt !important;}
+    .phone-mh-4pt { margin-right: 4pt !important; margin-left: 4pt !important;}
+    .phone-mh-5pt { margin-right: 5pt !important; margin-left: 5pt !important;}
+    .phone-mh-6pt { margin-right: 6pt !important; margin-left: 6pt !important;}
+    .phone-mh-7pt { margin-right: 7pt !important; margin-left: 7pt !important;}
+    .phone-mh-8pt { margin-right: 8pt !important; margin-left: 8pt !important;}
+    .phone-mh-9pt { margin-right: 9pt !important; margin-left: 9pt !important;}
+    .phone-mh-10pt { margin-right: 10pt !important; margin-left: 10pt !important;}
+
+    .phone-mh-1em { margin-right: 1em !important; margin-left: 1em !important;}
+    .phone-mh-2em { margin-right: 2em !important; margin-left: 2em !important;}
+    .phone-mh-3em { margin-right: 3em !important; margin-left: 3em !important;}
+    .phone-mh-4em { margin-right: 4em !important; margin-left: 4em !important;}
+    .phone-mh-5em { margin-right: 5em !important; margin-left: 5em !important;}
+    .phone-mh-6em { margin-right: 6em !important; margin-left: 6em !important;}
+    .phone-mh-7em { margin-right: 7em !important; margin-left: 7em !important;}
+    .phone-mh-8em { margin-right: 8em !important; margin-left: 8em !important;}
+    .phone-mh-9em { margin-right: 9em !important; margin-left: 9em !important;}
+    .phone-mh-10em { margin-right: 10em !important; margin-left: 10em !important;}
+
+    .phone-mh-1per { margin-right: 10% !important; margin-left: 10% !important;}
+    .phone-mh-2per { margin-right: 20% !important; margin-left: 20% !important;}
+    .phone-mh-3per { margin-right: 30% !important; margin-left: 30% !important;}
+    .phone-mh-4per { margin-right: 40% !important; margin-left: 40% !important;}
+    .phone-mh-5per { margin-right: 50% !important; margin-left: 50% !important;}
+    .phone-mh-6per { margin-right: 60% !important; margin-left: 60% !important;}
+    .phone-mh-7per { margin-right: 70% !important; margin-left: 70% !important;}
+    .phone-mh-8per { margin-right: 80% !important; margin-left: 80% !important;}
+    .phone-mh-9per { margin-right: 90% !important; margin-left: 90% !important;}
+    .phone-mh-10per { margin-right: 100% !important; margin-left: 100% !important;}
+
+    .phone-mh-1ch { margin-right: 1ch !important; margin-left: 1ch !important;}
+    .phone-mh-2ch { margin-right: 2ch !important; margin-left: 2ch !important;}
+    .phone-mh-3ch { margin-right: 3ch !important; margin-left: 3ch !important;}
+    .phone-mh-4ch { margin-right: 4ch !important; margin-left: 4ch !important;}
+    .phone-mh-5ch { margin-right: 5ch !important; margin-left: 5ch !important;}
+    .phone-mh-6ch { margin-right: 6ch !important; margin-left: 6ch !important;}
+    .phone-mh-7ch { margin-right: 7ch !important; margin-left: 7ch !important;}
+    .phone-mh-8ch { margin-right: 8ch !important; margin-left: 8ch !important;}
+    .phone-mh-9ch { margin-right: 9ch !important; margin-left: 9ch !important;}
+    .phone-mh-10ch { margin-right: 10ch !important; margin-left: 10ch !important;}
+
+    .phone-ml-1px { margin-left: 1px !important }
+    .phone-ml-2px { margin-left: 2px !important }
+    .phone-ml-3px { margin-left: 3px !important }
+    .phone-ml-4px { margin-left: 4px !important }
+    .phone-ml-5px { margin-left: 5px !important }
+    .phone-ml-6px { margin-left: 6px !important }
+    .phone-ml-7px { margin-left: 7px !important }
+    .phone-ml-8px { margin-left: 8px !important }
+    .phone-ml-9px { margin-left: 9px !important }
+    .phone-ml-10px { margin-left: 10px !important }
+
+    .phone-ml-1pt { margin-left: 1pt !important }
+    .phone-ml-2pt { margin-left: 2pt !important }
+    .phone-ml-3pt { margin-left: 3pt !important }
+    .phone-ml-4pt { margin-left: 4pt !important }
+    .phone-ml-5pt { margin-left: 5pt !important }
+    .phone-ml-6pt { margin-left: 6pt !important }
+    .phone-ml-7pt { margin-left: 7pt !important }
+    .phone-ml-8pt { margin-left: 8pt !important }
+    .phone-ml-9pt { margin-left: 9pt !important }
+    .phone-ml-10pt { margin-left: 10pt !important }
+
+    .phone-ml-1em { margin-left: 1em !important }
+    .phone-ml-2em { margin-left: 2em !important }
+    .phone-ml-3em { margin-left: 3em !important }
+    .phone-ml-4em { margin-left: 4em !important }
+    .phone-ml-5em { margin-left: 5em !important }
+    .phone-ml-6em { margin-left: 6em !important }
+    .phone-ml-7em { margin-left: 7em !important }
+    .phone-ml-8em { margin-left: 8em !important }
+    .phone-ml-9em { margin-left: 9em !important }
+    .phone-ml-10em { margin-left: 10em !important }
+
+    .phone-ml-1per { margin-left: 10% !important }
+    .phone-ml-2per { margin-left: 20% !important }
+    .phone-ml-3per { margin-left: 30% !important }
+    .phone-ml-4per { margin-left: 40% !important }
+    .phone-ml-5per { margin-left: 50% !important }
+    .phone-ml-6per { margin-left: 60% !important }
+    .phone-ml-7per { margin-left: 70% !important }
+    .phone-ml-8per { margin-left: 80% !important }
+    .phone-ml-9per { margin-left: 90% !important }
+    .phone-ml-10per { margin-left: 100% !important }
+
+    .phone-ml-1ch { margin-left: 1ch !important }
+    .phone-ml-2ch { margin-left: 2ch !important }
+    .phone-ml-3ch { margin-left: 3ch !important }
+    .phone-ml-4ch { margin-left: 4ch !important }
+    .phone-ml-5ch { margin-left: 5ch !important }
+    .phone-ml-6ch { margin-left: 6ch !important }
+    .phone-ml-7ch { margin-left: 7ch !important }
+    .phone-ml-8ch { margin-left: 8ch !important }
+    .phone-ml-9ch { margin-left: 9ch !important }
+    .phone-ml-10ch { margin-left: 10ch !important }
+
+    .phone-mt-auto {margin-top: auto !important }
+
+    .phone-mt-1px { margin-top: 1px !important }
+    .phone-mt-2px { margin-top: 2px !important }
+    .phone-mt-3px { margin-top: 3px !important }
+    .phone-mt-4px { margin-top: 4px !important }
+    .phone-mt-5px { margin-top: 5px !important }
+    .phone-mt-6px { margin-top: 6px !important }
+    .phone-mt-7px { margin-top: 7px !important }
+    .phone-mt-8px { margin-top: 8px !important }
+    .phone-mt-9px { margin-top: 9px !important }
+    .phone-mt-10px { margin-top: 10px !important }
+
+    .phone-mt-1pt { margin-top: 1pt !important }
+    .phone-mt-2pt { margin-top: 2pt !important }
+    .phone-mt-3pt { margin-top: 3pt !important }
+    .phone-mt-4pt { margin-top: 4pt !important }
+    .phone-mt-5pt { margin-top: 5pt !important }
+    .phone-mt-6pt { margin-top: 6pt !important }
+    .phone-mt-7pt { margin-top: 7pt !important }
+    .phone-mt-8pt { margin-top: 8pt !important }
+    .phone-mt-9pt { margin-top: 9pt !important }
+    .phone-mt-10pt { margin-top: 10pt !important }
+
+    .phone-mt-1em { margin-top: 1em !important }
+    .phone-mt-2em { margin-top: 2em !important }
+    .phone-mt-3em { margin-top: 3em !important }
+    .phone-mt-4em { margin-top: 4em !important }
+    .phone-mt-5em { margin-top: 5em !important }
+    .phone-mt-6em { margin-top: 6em !important }
+    .phone-mt-7em { margin-top: 7em !important }
+    .phone-mt-8em { margin-top: 8em !important }
+    .phone-mt-9em { margin-top: 9em !important }
+    .phone-mt-10em { margin-top: 10em !important }
+
+    .phone-mt-1per { margin-top: 10% !important }
+    .phone-mt-2per { margin-top: 20% !important }
+    .phone-mt-3per { margin-top: 30% !important }
+    .phone-mt-4per { margin-top: 40% !important }
+    .phone-mt-5per { margin-top: 50% !important }
+    .phone-mt-6per { margin-top: 60% !important }
+    .phone-mt-7per { margin-top: 70% !important }
+    .phone-mt-8per { margin-top: 80% !important }
+    .phone-mt-9per { margin-top: 90% !important }
+    .phone-mt-10per { margin-top: 100% !important }
+
+    .phone-mt-1ch { margin-top: 1ch !important }
+    .phone-mt-2ch { margin-top: 2ch !important }
+    .phone-mt-3ch { margin-top: 3ch !important }
+    .phone-mt-4ch { margin-top: 4ch !important }
+    .phone-mt-5ch { margin-top: 5ch !important }
+    .phone-mt-6ch { margin-top: 6ch !important }
+    .phone-mt-7ch { margin-top: 7ch !important }
+    .phone-mt-8ch { margin-top: 8ch !important }
+    .phone-mt-9ch { margin-top: 9ch !important }
+    .phone-mt-10ch { margin-top: 10ch !important }
+
+    .phone-mr-auto { margin-right: auto !important }
+
+    .phone-mr-1px { margin-right: 1px !important }
+    .phone-mr-2px { margin-right: 2px !important }
+    .phone-mr-3px { margin-right: 3px !important }
+    .phone-mr-4px { margin-right: 4px !important }
+    .phone-mr-5px { margin-right: 5px !important }
+    .phone-mr-6px { margin-right: 6px !important }
+    .phone-mr-7px { margin-right: 7px !important }
+    .phone-mr-8px { margin-right: 8px !important }
+    .phone-mr-9px { margin-right: 9px !important }
+    .phone-mr-10px { margin-right: 10px !important }
+
+    .phone-mr-1pt { margin-right: 1pt !important }
+    .phone-mr-2pt { margin-right: 2pt !important }
+    .phone-mr-3pt { margin-right: 3pt !important }
+    .phone-mr-4pt { margin-right: 4pt !important }
+    .phone-mr-5pt { margin-right: 5pt !important }
+    .phone-mr-6pt { margin-right: 6pt !important }
+    .phone-mr-7pt { margin-right: 7pt !important }
+    .phone-mr-8pt { margin-right: 8pt !important }
+    .phone-mr-9pt { margin-right: 9pt !important }
+    .phone-mr-10pt { margin-right: 10pt !important }
+
+    .phone-mr-1em { margin-right: 1em !important }
+    .phone-mr-2em { margin-right: 2em !important }
+    .phone-mr-3em { margin-right: 3em !important }
+    .phone-mr-4em { margin-right: 4em !important }
+    .phone-mr-5em { margin-right: 5em !important }
+    .phone-mr-6em { margin-right: 6em !important }
+    .phone-mr-7em { margin-right: 7em !important }
+    .phone-mr-8em { margin-right: 8em !important }
+    .phone-mr-9em { margin-right: 9em !important }
+    .phone-mr-10em { margin-right: 10em !important }
+
+    .phone-mr-1per { margin-right: 10% !important }
+    .phone-mr-2per { margin-right: 20% !important }
+    .phone-mr-3per { margin-right: 30% !important }
+    .phone-mr-4per { margin-right: 40% !important }
+    .phone-mr-5per { margin-right: 50% !important }
+    .phone-mr-6per { margin-right: 60% !important }
+    .phone-mr-7per { margin-right: 70% !important }
+    .phone-mr-8per { margin-right: 80% !important }
+    .phone-mr-9per { margin-right: 90% !important }
+    .phone-mr-10per { margin-right: 100% !important }
+
+    .phone-mr-1ch { margin-right: 1ch !important }
+    .phone-mr-2ch { margin-right: 2ch !important }
+    .phone-mr-3ch { margin-right: 3ch !important }
+    .phone-mr-4ch { margin-right: 4ch !important }
+    .phone-mr-5ch { margin-right: 5ch !important }
+    .phone-mr-6ch { margin-right: 6ch !important }
+    .phone-mr-7ch { margin-right: 7ch !important }
+    .phone-mr-8ch { margin-right: 8ch !important }
+    .phone-mr-9ch { margin-right: 9ch !important }
+    .phone-mr-10ch { margin-right: 10ch !important }
+
+    .phone-mb-auto { margin-bottom: auto !important }
+
+    .phone-mb-1px { margin-bottom: 1px !important }
+    .phone-mb-2px { margin-bottom: 2px !important }
+    .phone-mb-3px { margin-bottom: 3px !important }
+    .phone-mb-4px { margin-bottom: 4px !important }
+    .phone-mb-5px { margin-bottom: 5px !important }
+    .phone-mb-6px { margin-bottom: 6px !important }
+    .phone-mb-7px { margin-bottom: 7px !important }
+    .phone-mb-8px { margin-bottom: 8px !important }
+    .phone-mb-9px { margin-bottom: 9px !important }
+    .phone-mb-10px { margin-bottom: 10px !important }
+
+    .phone-mb-1pt { margin-bottom: 1pt !important }
+    .phone-mb-2pt { margin-bottom: 2pt !important }
+    .phone-mb-3pt { margin-bottom: 3pt !important }
+    .phone-mb-4pt { margin-bottom: 4pt !important }
+    .phone-mb-5pt { margin-bottom: 5pt !important }
+    .phone-mb-6pt { margin-bottom: 6pt !important }
+    .phone-mb-7pt { margin-bottom: 7pt !important }
+    .phone-mb-8pt { margin-bottom: 8pt !important }
+    .phone-mb-9pt { margin-bottom: 9pt !important }
+    .phone-mb-10pt { margin-bottom: 10pt !important }
+
+    .phone-mb-1em { margin-bottom: 1em !important }
+    .phone-mb-2em { margin-bottom: 2em !important }
+    .phone-mb-3em { margin-bottom: 3em !important }
+    .phone-mb-4em { margin-bottom: 4em !important }
+    .phone-mb-5em { margin-bottom: 5em !important }
+    .phone-mb-6em { margin-bottom: 6em !important }
+    .phone-mb-7em { margin-bottom: 7em !important }
+    .phone-mb-8em { margin-bottom: 8em !important }
+    .phone-mb-9em { margin-bottom: 9em !important }
+    .phone-mb-10em { margin-bottom: 10em !important }
+
+    .phone-mb-1per { margin-bottom: 10% !important }
+    .phone-mb-2per { margin-bottom: 20% !important }
+    .phone-mb-3per { margin-bottom: 30% !important }
+    .phone-mb-4per { margin-bottom: 40% !important }
+    .phone-mb-5per { margin-bottom: 50% !important }
+    .phone-mb-6per { margin-bottom: 60% !important }
+    .phone-mb-7per { margin-bottom: 70% !important }
+    .phone-mb-8per { margin-bottom: 80% !important }
+    .phone-mb-9per { margin-bottom: 90% !important }
+    .phone-mb-10per { margin-bottom: 100% !important }
+
+    .phone-mb-1ch { margin-bottom: 1ch !important }
+    .phone-mb-2ch { margin-bottom: 2ch !important }
+    .phone-mb-3ch { margin-bottom: 3ch !important }
+    .phone-mb-4ch { margin-bottom: 4ch !important }
+    .phone-mb-5ch { margin-bottom: 5ch !important }
+    .phone-mb-6ch { margin-bottom: 6ch !important }
+    .phone-mb-7ch { margin-bottom: 7ch !important }
+    .phone-mb-8ch { margin-bottom: 8ch !important }
+    .phone-mb-9ch { margin-bottom: 9ch !important }
+    .phone-mb-10ch { margin-bottom: 10ch !important }
+
+    /* padding Begin*/
+    .phone-p-0 { padding: 0}
+    .phone-p-auto { padding: auto }
+    .phone-p-inherit { padding: inherit }
+    .phone-p-initial { padding: initial }
+    .phone-p-unset { padding: unset }
+
+/* padding PX */
+    .phone-p-1px { padding: 1px !important }
+    .phone-p-2px { padding: 2px !important }
+    .phone-p-3px { padding: 3px !important }
+    .phone-p-4px { padding: 4px !important }
+    .phone-p-5px { padding: 5px !important }
+    .phone-p-6px { padding: 6px !important }
+    .phone-p-7px { padding: 7px !important }
+    .phone-p-8px { padding: 8px !important }
+    .phone-p-9px { padding: 9px !important }
+    .phone-p-10px { padding: 10px !important }
+
+    .phone-pl-1px { padding-left: 1px !important }
+    .phone-pl-2px { padding-left: 2px !important }
+    .phone-pl-3px { padding-left: 3px !important }
+    .phone-pl-4px { padding-left: 4px !important }
+    .phone-pl-5px { padding-left: 5px !important }
+    .phone-pl-6px { padding-left: 6px !important }
+    .phone-pl-7px { padding-left: 7px !important }
+    .phone-pl-8px { padding-left: 8px !important }
+    .phone-pl-9px { padding-left: 9px !important }
+    .phone-pl-10px { padding-left: 10px !important }
+
+/* padding PT */
+    .phone-p-1pt{ padding: 1pt !important }
+    .phone-p-2pt{ padding: 2pt !important }
+    .phone-p-3pt{ padding: 3pt !important }
+    .phone-p-4pt{ padding: 4pt !important }
+    .phone-p-5pt{ padding: 5pt !important }
+    .phone-p-6pt{ padding: 6pt !important }
+    .phone-p-7pt{ padding: 7pt !important }
+    .phone-p-8pt{ padding: 8pt !important }
+    .phone-p-9pt{ padding: 9pt !important }
+    .phone-p-10pt{ padding: 10pt !important }
+
+    .phone-pl-1pt{ padding-left: 1pt !important }
+    .phone-pl-2pt{ padding-left: 2pt !important }
+    .phone-pl-3pt{ padding-left: 3pt !important }
+    .phone-pl-4pt{ padding-left: 4pt !important }
+    .phone-pl-5pt{ padding-left: 5pt !important }
+    .phone-pl-6pt{ padding-left: 6pt !important }
+    .phone-pl-7pt{ padding-left: 7pt !important }
+    .phone-pl-8pt{ padding-left: 8pt !important }
+    .phone-pl-9pt{ padding-left: 9pt !important }
+    .phone-pl-10pt{ padding-left: 10pt !important }
+
+/* padding EM */
+    .phone-p-1em { padding: 1em !important }
+    .phone-p-2em { padding: 2em !important }
+    .phone-p-3em { padding: 3em !important }
+    .phone-p-4em { padding: 4em !important }
+    .phone-p-5em { padding: 5em !important }
+    .phone-p-6em { padding: 6em !important }
+    .phone-p-7em { padding: 7em !important }
+    .phone-p-8em { padding: 8em !important }
+    .phone-p-9em { padding: 9em !important }
+    .phone-p-10em{ padding: 10em !important; }
+
+    .phone-pl-1em { padding-left: 1em !important }
+    .phone-pl-2em { padding-left: 2em !important }
+    .phone-pl-3em { padding-left: 3em !important }
+    .phone-pl-4em { padding-left: 4em !important }
+    .phone-pl-5em { padding-left: 5em !important }
+    .phone-pl-6em { padding-left: 6em !important }
+    .phone-pl-7em { padding-left: 7em !important }
+    .phone-pl-8em { padding-left: 8em !important }
+    .phone-pl-9em { padding-left: 9em !important }
+    .phone-pl-10em{ padding-left: 10em !important; }
+
+/* padding percentage */
+    .phone-p-1per { padding: 10% !important }
+    .phone-p-2per { padding: 20% !important }
+    .phone-p-3per { padding: 30% !important }
+    .phone-p-4per { padding: 40% !important }
+    .phone-p-5per { padding: 50% !important }
+    .phone-p-6per { padding: 60% !important }
+    .phone-p-7per { padding: 70% !important }
+    .phone-p-8per { padding: 80% !important }
+    .phone-p-9per { padding: 90% !important }
+    .phone-p-10per { padding: 100% !important }
+
+    .phone-pl-1per { padding-left: 10% !important }
+    .phone-pl-2per { padding-left: 20% !important }
+    .phone-pl-3per { padding-left: 30% !important }
+    .phone-pl-4per { padding-left: 40% !important }
+    .phone-pl-5per { padding-left: 50% !important }
+    .phone-pl-6per { padding-left: 60% !important }
+    .phone-pl-7per { padding-left: 70% !important }
+    .phone-pl-8per { padding-left: 80% !important }
+    .phone-pl-9per { padding-left: 90% !important }
+    .phone-pl-10per { padding-left: 100% !important }
+
+/* padding CH */
+    .phone-p-1ch { padding: 1ch !important }
+    .phone-p-2ch { padding: 2ch !important }
+    .phone-p-3ch { padding: 3ch !important }
+    .phone-p-4ch { padding: 4ch !important }
+    .phone-p-5ch { padding: 5ch !important }
+    .phone-p-6ch { padding: 6ch !important }
+    .phone-p-7ch { padding: 7ch !important }
+    .phone-p-8ch { padding: 8ch !important }
+    .phone-p-9ch { padding: 9ch !important }
+    .phone-p-10ch { padding: 10ch !important }
+
+    .phone-pl-1ch { padding-left: 1ch !important }
+    .phone-pl-2ch { padding-left: 2ch !important }
+    .phone-pl-3ch { padding-left: 3ch !important }
+    .phone-pl-4ch { padding-left: 4ch !important }
+    .phone-pl-5ch { padding-left: 5ch !important }
+    .phone-pl-6ch { padding-left: 6ch !important }
+    .phone-pl-7ch { padding-left: 7ch !important }
+    .phone-pl-8ch { padding-left: 8ch !important }
+    .phone-pl-9ch { padding-left: 9ch !important }
+    .phone-pl-10ch { padding-left: 10ch !important }
+
+    .phone-pt-1px { padding-top: 1px !important}
+    .phone-pt-2px { padding-top: 2px !important}
+    .phone-pt-3px { padding-top: 3px !important}
+    .phone-pt-4px { padding-top: 4px !important}
+    .phone-pt-5px { padding-top: 5px !important}
+    .phone-pt-6px { padding-top: 6px !important}
+    .phone-pt-7px { padding-top: 7px !important}
+    .phone-pt-8px { padding-top: 8px !important}
+    .phone-pt-9px { padding-top: 9px !important}
+    .phone-pt-10px { padding-top: 10px !important}
+
+    .phone-pt-1pt { padding-top: 1pt !important}
+    .phone-pt-2pt { padding-top: 2pt !important}
+    .phone-pt-3pt { padding-top: 3pt !important}
+    .phone-pt-4pt { padding-top: 4pt !important}
+    .phone-pt-5pt { padding-top: 5pt !important}
+    .phone-pt-6pt { padding-top: 6pt !important}
+    .phone-pt-7pt { padding-top: 7pt !important}
+    .phone-pt-8pt { padding-top: 8pt !important}
+    .phone-pt-9pt { padding-top: 9pt !important}
+    .phone-pt-10pt { padding-top: 10pt !important}
+
+    .phone-pt-1em { padding-top: 1em !important}
+    .phone-pt-2em { padding-top: 2em !important}
+    .phone-pt-3em { padding-top: 3em !important}
+    .phone-pt-4em { padding-top: 4em !important}
+    .phone-pt-5em { padding-top: 5em !important}
+    .phone-pt-6em { padding-top: 6em !important}
+    .phone-pt-7em { padding-top: 7em !important}
+    .phone-pt-8em { padding-top: 8em !important}
+    .phone-pt-9em { padding-top: 9em !important}
+    .phone-pt-10em { padding-top: 10em !important}
+
+    .phone-pt-1per { padding-top: 10% !important}
+    .phone-pt-2per { padding-top: 20% !important}
+    .phone-pt-3per { padding-top: 30% !important}
+    .phone-pt-4per { padding-top: 40% !important}
+    .phone-pt-5per { padding-top: 50% !important}
+    .phone-pt-6per { padding-top: 60% !important}
+    .phone-pt-7per { padding-top: 70% !important}
+    .phone-pt-8per { padding-top: 80% !important}
+    .phone-pt-9per { padding-top: 90% !important}
+    .phone-pt-10per { padding-top: 100% !important}
+
+    .phone-pt-1ch { padding-top: 1ch !important}
+    .phone-pt-2ch { padding-top: 2ch !important}
+    .phone-pt-3ch { padding-top: 3ch !important}
+    .phone-pt-4ch { padding-top: 4ch !important}
+    .phone-pt-5ch { padding-top: 5ch !important}
+    .phone-pt-6ch { padding-top: 6ch !important}
+    .phone-pt-7ch { padding-top: 7ch !important}
+    .phone-pt-8ch { padding-top: 8ch !important}
+    .phone-pt-9ch { padding-top: 9ch !important}
+    .phone-pt-10ch { padding-top: 10ch !important}
+
+    .phone-pr-1px { padding-right: 1px !important}
+    .phone-pr-2px { padding-right: 2px !important}
+    .phone-pr-3px { padding-right: 3px !important}
+    .phone-pr-4px { padding-right: 4px !important}
+    .phone-pr-5px { padding-right: 5px !important}
+    .phone-pr-6px { padding-right: 6px !important}
+    .phone-pr-7px { padding-right: 7px !important}
+    .phone-pr-8px { padding-right: 8px !important}
+    .phone-pr-9px { padding-right: 9px !important}
+    .phone-pr-10px { padding-right: 10px !important}
+
+    .phone-pr-1pt { padding-right: 1pt !important}
+    .phone-pr-2pt { padding-right: 2pt !important}
+    .phone-pr-3pt { padding-right: 3pt !important}
+    .phone-pr-4pt { padding-right: 4pt !important}
+    .phone-pr-5pt { padding-right: 5pt !important}
+    .phone-pr-6pt { padding-right: 6pt !important}
+    .phone-pr-7pt { padding-right: 7pt !important}
+    .phone-pr-8pt { padding-right: 8pt !important}
+    .phone-pr-9pt { padding-right: 9pt !important}
+    .phone-pr-10pt { padding-right: 10pt !important}
+
+    .phone-pr-1em { padding-right: 1em !important}
+    .phone-pr-2em { padding-right: 2em !important}
+    .phone-pr-3em { padding-right: 3em !important}
+    .phone-pr-4em { padding-right: 4em !important}
+    .phone-pr-5em { padding-right: 5em !important}
+    .phone-pr-6em { padding-right: 6em !important}
+    .phone-pr-7em { padding-right: 7em !important}
+    .phone-pr-8em { padding-right: 8em !important}
+    .phone-pr-9em { padding-right: 9em !important}
+    .phone-pr-10em { padding-right: 10em !important}
+
+    .phone-pr-1per { padding-right: 10% !important}
+    .phone-pr-2per { padding-right: 20% !important}
+    .phone-pr-3per { padding-right: 30% !important}
+    .phone-pr-4per { padding-right: 40% !important}
+    .phone-pr-5per { padding-right: 50% !important}
+    .phone-pr-6per { padding-right: 60% !important}
+    .phone-pr-7per { padding-right: 70% !important}
+    .phone-pr-8per { padding-right: 80% !important}
+    .phone-pr-9per { padding-right: 90% !important}
+    .phone-pr-10per { padding-right: 100% !important}
+
+    .phone-pr-1ch { padding-right: 1ch !important}
+    .phone-pr-2ch { padding-right: 2ch !important}
+    .phone-pr-3ch { padding-right: 3ch !important}
+    .phone-pr-4ch { padding-right: 4ch !important}
+    .phone-pr-5ch { padding-right: 5ch !important}
+    .phone-pr-6ch { padding-right: 6ch !important}
+    .phone-pr-7ch { padding-right: 7ch !important}
+    .phone-pr-8ch { padding-right: 8ch !important}
+    .phone-pr-9ch { padding-right: 9ch !important}
+    .phone-pr-10ch { padding-right: 10ch !important}
+
+    .phone-pb-1px { padding-bottom: 1px !important}
+    .phone-pb-2px { padding-bottom: 2px !important}
+    .phone-pb-3px { padding-bottom: 3px !important}
+    .phone-pb-4px { padding-bottom: 4px !important}
+    .phone-pb-5px { padding-bottom: 5px !important}
+    .phone-pb-6px { padding-bottom: 6px !important}
+    .phone-pb-7px { padding-bottom: 7px !important}
+    .phone-pb-8px { padding-bottom: 8px !important}
+    .phone-pb-9px { padding-bottom: 9px !important}
+    .phone-pb-10px { padding-bottom: 10px !important}
+
+    .phone-pb-1pt { padding-bottom: 1pt !important}
+    .phone-pb-2pt { padding-bottom: 2pt !important}
+    .phone-pb-3pt { padding-bottom: 3pt !important}
+    .phone-pb-4pt { padding-bottom: 4pt !important}
+    .phone-pb-5pt { padding-bottom: 5pt !important}
+    .phone-pb-6pt { padding-bottom: 6pt !important}
+    .phone-pb-7pt { padding-bottom: 7pt !important}
+    .phone-pb-8pt { padding-bottom: 8pt !important}
+    .phone-pb-9pt { padding-bottom: 9pt !important}
+    .phone-pb-10pt { padding-bottom: 10pt !important}
+
+    .phone-pb-1em { padding-bottom: 1em !important}
+    .phone-pb-2em { padding-bottom: 2em !important}
+    .phone-pb-3em { padding-bottom: 3em !important}
+    .phone-pb-4em { padding-bottom: 4em !important}
+    .phone-pb-5em { padding-bottom: 5em !important}
+    .phone-pb-6em { padding-bottom: 6em !important}
+    .phone-pb-7em { padding-bottom: 7em !important}
+    .phone-pb-8em { padding-bottom: 8em !important}
+    .phone-pb-9em { padding-bottom: 9em !important}
+    .phone-pb-10em { padding-bottom: 10em !important}
+
+    .phone-pb-1per { padding-bottom: 10% !important}
+    .phone-pb-2per { padding-bottom: 20% !important}
+    .phone-pb-3per { padding-bottom: 30% !important}
+    .phone-pb-4per { padding-bottom: 40% !important}
+    .phone-pb-5per { padding-bottom: 50% !important}
+    .phone-pb-6per { padding-bottom: 60% !important}
+    .phone-pb-7per { padding-bottom: 70% !important}
+    .phone-pb-8per { padding-bottom: 80% !important}
+    .phone-pb-9per { padding-bottom: 90% !important}
+    .phone-pb-10per { padding-bottom: 100% !important}
+
+    .phone-pb-1ch { padding-bottom: 1ch !important}
+    .phone-pb-2ch { padding-bottom: 2ch !important}
+    .phone-pb-3ch { padding-bottom: 3ch !important}
+    .phone-pb-4ch { padding-bottom: 4ch !important}
+    .phone-pb-5ch { padding-bottom: 5ch !important}
+    .phone-pb-6ch { padding-bottom: 6ch !important}
+    .phone-pb-7ch { padding-bottom: 7ch !important}
+    .phone-pb-8ch { padding-bottom: 8ch !important}
+    .phone-pb-9ch { padding-bottom: 9ch !important}
+    .phone-pb-10ch { padding-bottom: 10ch !important}
+
+    .phone-pv-1px { padding-top: 0 !important; padding-bottom: 0 !important;}
+
+    .phone-pv-1px { padding-top: 1px !important; padding-bottom: 1px !important;}
+    .phone-pv-2px { padding-top: 2px !important; padding-bottom: 2px !important;}
+    .phone-pv-3px { padding-top: 3px !important; padding-bottom: 3px !important;}
+    .phone-pv-4px { padding-top: 4px !important; padding-bottom: 4px !important;}
+    .phone-pv-5px { padding-top: 5px !important; padding-bottom: 5px !important;}
+    .phone-pv-6px { padding-top: 6px !important; padding-bottom: 6px !important;}
+    .phone-pv-7px { padding-top: 7px !important; padding-bottom: 7px !important;}
+    .phone-pv-8px { padding-top: 8px !important; padding-bottom: 8px !important;}
+    .phone-pv-9px { padding-top: 9px !important; padding-bottom: 9px !important;}
+    .phone-pv-10px { padding-top: 10px !important; padding-bottom: 10px !important;}
+
+    .phone-pv-1pt { padding-top: 1pt !important; padding-bottom: 1pt !important;}
+    .phone-pv-2pt { padding-top: 2pt !important; padding-bottom: 2pt !important;}
+    .phone-pv-3pt { padding-top: 3pt !important; padding-bottom: 3pt !important;}
+    .phone-pv-4pt { padding-top: 4pt !important; padding-bottom: 4pt !important;}
+    .phone-pv-5pt { padding-top: 5pt !important; padding-bottom: 5pt !important;}
+    .phone-pv-6pt { padding-top: 6pt !important; padding-bottom: 6pt !important;}
+    .phone-pv-7pt { padding-top: 7pt !important; padding-bottom: 7pt !important;}
+    .phone-pv-8pt { padding-top: 8pt !important; padding-bottom: 8pt !important;}
+    .phone-pv-9pt { padding-top: 9pt !important; padding-bottom: 9pt !important;}
+    .phone-pv-10pt { padding-top: 10pt !important; padding-bottom: 10pt !important;}
+
+    .phone-pv-1em { padding-top: 1em !important; padding-bottom: 1em !important;}
+    .phone-pv-2em { padding-top: 2em !important; padding-bottom: 2em !important;}
+    .phone-pv-3em { padding-top: 3em !important; padding-bottom: 3em !important;}
+    .phone-pv-4em { padding-top: 4em !important; padding-bottom: 4em !important;}
+    .phone-pv-5em { padding-top: 5em !important; padding-bottom: 5em !important;}
+    .phone-pv-6em { padding-top: 6em !important; padding-bottom: 6em !important;}
+    .phone-pv-7em { padding-top: 7em !important; padding-bottom: 7em !important;}
+    .phone-pv-8em { padding-top: 8em !important; padding-bottom: 8em !important;}
+    .phone-pv-9em { padding-top: 9em !important; padding-bottom: 9em !important;}
+    .phone-pv-10em { padding-top: 10em !important; padding-bottom: 10em !important;}
+
+    .phone-pv-1per { padding-top: 10% !important; padding-bottom: 10% !important;}
+    .phone-pv-2per { padding-top: 20% !important; padding-bottom: 20% !important;}
+    .phone-pv-3per { padding-top: 30% !important; padding-bottom: 30% !important;}
+    .phone-pv-4per { padding-top: 40% !important; padding-bottom: 40% !important;}
+    .phone-pv-5per { padding-top: 50% !important; padding-bottom: 50% !important;}
+    .phone-pv-6per { padding-top: 60% !important; padding-bottom: 60% !important;}
+    .phone-pv-7per { padding-top: 70% !important; padding-bottom: 70% !important;}
+    .phone-pv-8per { padding-top: 80% !important; padding-bottom: 80% !important;}
+    .phone-pv-9per { padding-top: 90% !important; padding-bottom: 90% !important;}
+    .phone-pv-10per { padding-top: 100% !important; padding-bottom: 100% !important;}
+
+    .phone-pv-1ch { padding-top: 1ch !important; padding-bottom: 1ch !important;}
+    .phone-pv-2ch { padding-top: 2ch !important; padding-bottom: 2ch !important;}
+    .phone-pv-3ch { padding-top: 3ch !important; padding-bottom: 3ch !important;}
+    .phone-pv-4ch { padding-top: 4ch !important; padding-bottom: 4ch !important;}
+    .phone-pv-5ch { padding-top: 5ch !important; padding-bottom: 5ch !important;}
+    .phone-pv-6ch { padding-top: 6ch !important; padding-bottom: 6ch !important;}
+    .phone-pv-7ch { padding-top: 7ch !important; padding-bottom: 7ch !important;}
+    .phone-pv-8ch { padding-top: 8ch !important; padding-bottom: 8ch !important;}
+    .phone-pv-9ch { padding-top: 9ch !important; padding-bottom: 9ch !important;}
+    .phone-pv-10ch { padding-top: 10ch !important; padding-bottom: 10ch !important;}
+
+    .phone-ph-0 { padding-right: 0 !important; padding-left: 0 !important;}
+
+    .phone-ph-1px { padding-right: 1px !important; padding-left: 1px !important;}
+    .phone-ph-2px { padding-right: 2px !important; padding-left: 2px !important;}
+    .phone-ph-3px { padding-right: 3px !important; padding-left: 3px !important;}
+    .phone-ph-4px { padding-right: 4px !important; padding-left: 4px !important;}
+    .phone-ph-5px { padding-right: 5px !important; padding-left: 5px !important;}
+    .phone-ph-6px { padding-right: 6px !important; padding-left: 6px !important;}
+    .phone-ph-7px { padding-right: 7px !important; padding-left: 7px !important;}
+    .phone-ph-8px { padding-right: 8px !important; padding-left: 8px !important;}
+    .phone-ph-9px { padding-right: 9px !important; padding-left: 9px !important;}
+    .phone-ph-10px { padding-right: 10px !important; padding-left: 10px !important;}
+
+    .phone-ph-1pt { padding-right: 1pt !important; padding-left: 1pt !important;}
+    .phone-ph-2pt { padding-right: 2pt !important; padding-left: 2pt !important;}
+    .phone-ph-3pt { padding-right: 3pt !important; padding-left: 3pt !important;}
+    .phone-ph-4pt { padding-right: 4pt !important; padding-left: 4pt !important;}
+    .phone-ph-5pt { padding-right: 5pt !important; padding-left: 5pt !important;}
+    .phone-ph-6pt { padding-right: 6pt !important; padding-left: 6pt !important;}
+    .phone-ph-7pt { padding-right: 7pt !important; padding-left: 7pt !important;}
+    .phone-ph-8pt { padding-right: 8pt !important; padding-left: 8pt !important;}
+    .phone-ph-9pt { padding-right: 9pt !important; padding-left: 9pt !important;}
+    .phone-ph-10pt { padding-right: 10pt !important; padding-left: 10pt !important;}
+
+    .phone-ph-1em { padding-right: 1em !important; padding-left: 1em !important;}
+    .phone-ph-2em { padding-right: 2em !important; padding-left: 2em !important;}
+    .phone-ph-3em { padding-right: 3em !important; padding-left: 3em !important;}
+    .phone-ph-4em { padding-right: 4em !important; padding-left: 4em !important;}
+    .phone-ph-5em { padding-right: 5em !important; padding-left: 5em !important;}
+    .phone-ph-6em { padding-right: 6em !important; padding-left: 6em !important;}
+    .phone-ph-7em { padding-right: 7em !important; padding-left: 7em !important;}
+    .phone-ph-8em { padding-right: 8em !important; padding-left: 8em !important;}
+    .phone-ph-9em { padding-right: 9em !important; padding-left: 9em !important;}
+    .phone-ph-10em { padding-right: 10em !important; padding-left: 10em !important;}
+
+    .phone-ph-1per { padding-right: 10% !important; padding-left: 10% !important;}
+    .phone-ph-2per { padding-right: 20% !important; padding-left: 20% !important;}
+    .phone-ph-3per { padding-right: 30% !important; padding-left: 30% !important;}
+    .phone-ph-4per { padding-right: 40% !important; padding-left: 40% !important;}
+    .phone-ph-5per { padding-right: 50% !important; padding-left: 50% !important;}
+    .phone-ph-6per { padding-right: 60% !important; padding-left: 60% !important;}
+    .phone-ph-7per { padding-right: 70% !important; padding-left: 70% !important;}
+    .phone-ph-8per { padding-right: 80% !important; padding-left: 80% !important;}
+    .phone-ph-9per { padding-right: 90% !important; padding-left: 90% !important;}
+    .phone-ph-10per { padding-right: 100% !important; padding-left: 100% !important;}
+
+    .phone-ph-1ch { padding-right: 1ch !important; padding-left: 1ch !important;}
+    .phone-ph-2ch { padding-right: 2ch !important; padding-left: 2ch !important;}
+    .phone-ph-3ch { padding-right: 3ch !important; padding-left: 3ch !important;}
+    .phone-ph-4ch { padding-right: 4ch !important; padding-left: 4ch !important;}
+    .phone-ph-5ch { padding-right: 5ch !important; padding-left: 5ch !important;}
+    .phone-ph-6ch { padding-right: 6ch !important; padding-left: 6ch !important;}
+    .phone-ph-7ch { padding-right: 7ch !important; padding-left: 7ch !important;}
+    .phone-ph-8ch { padding-right: 8ch !important; padding-left: 8ch !important;}
+    .phone-ph-9ch { padding-right: 9ch !important; padding-left: 9ch !important;}
+    .phone-ph-10ch { padding-right: 10ch !important; padding-left: 10ch !important;}
 }
+
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .tablet-hidden{ display: none }
     .tablet-show{ display: block }
 
+    .tablet-font-xxs { font-size: xx-small !important }
+    .tablet-font-xs { font-size: x-small !important }
+    .tablet-font-ss { font-size: smaller !important }
+    .tablet-font-s { font-size: small !important }
+    .tablet-font-m { font-size: medium !important }
+    .tablet-font-l { font-size: large !important }
+    .tablet-font-ll { font-size: larger !important }
+    .tablet-font-xl { font-size: x-large !important}
+    .tablet-font-xxl { font-size: xx-large !important }
+
+    .tablet-width-fit { width: fit-content !important }
+
     .tablet-width-1per { width: 10% !important }
+    .tablet-width-15per { width: 15% !important }
     .tablet-width-2per { width: 20% !important }
+    .tablet-width-25per { width: 25% !important}
     .tablet-width-3per { width: 30% !important }
     .tablet-width-4per { width: 40% !important }
     .tablet-width-5per { width: 50% !important }
@@ -2186,8 +3070,863 @@ label {
     .tablet-width-7per { width: 70% !important }
     .tablet-width-8per { width: 80% !important }
     .tablet-width-9per { width: 90% !important }
+    .tablet-width-95per { width: 95% !important }
     .tablet-width-10per { width: 100% !important }
+
+    .tablet-width-1px { width: 10px !important }
+    .tablet-width-2px { width: 20px !important }
+    .tablet-width-3px { width: 30px !important }
+    .tablet-width-4px { width: 40px !important }
+    .tablet-width-5px { width: 50px !important }
+    .tablet-width-6px { width: 60px !important }
+    .tablet-width-7px { width: 70px !important }
+    .tablet-width-8px { width: 80px !important }
+    .tablet-width-9px { width: 90px !important }
+    .tablet-width-10px { width: 100px !important }
+
+    .tablet-width-1pt { width: 10pt !important }
+    .tablet-width-2pt { width: 20pt !important }
+    .tablet-width-3pt { width: 30pt !important }
+    .tablet-width-4pt { width: 40pt !important }
+    .tablet-width-5pt { width: 50pt !important }
+    .tablet-width-6pt { width: 60pt !important }
+    .tablet-width-7pt { width: 70pt !important }
+    .tablet-width-8pt { width: 80pt !important }
+    .tablet-width-9pt { width: 90pt !important }
+    .tablet-width-10pt { width: 100pt !important }
+
+    .tablet-width-1em { width: 1em !important }
+    .tablet-width-2em { width: 2em !important }
+    .tablet-width-3em { width: 3em !important }
+    .tablet-width-4em { width: 4em !important }
+    .tablet-width-5em { width: 5em !important }
+    .tablet-width-6em { width: 6em !important }
+    .tablet-width-7em { width: 7em !important }
+    .tablet-width-8em { width: 8em !important }
+    .tablet-width-9em { width: 9em !important }
+    .tablet-width-10em { width: 10em !important }
+
+    .tablet-width-1ch { width: 1ch !important }
+    .tablet-width-2ch { width: 2ch !important }
+    .tablet-width-3ch { width: 3ch !important }
+    .tablet-width-4ch { width: 4ch !important }
+    .tablet-width-5ch { width: 5ch !important }
+    .tablet-width-6ch { width: 6ch !important }
+    .tablet-width-7ch { width: 7ch !important }
+    .tablet-width-8ch { width: 8ch !important }
+    .tablet-width-9ch { width: 9ch !important }
+    .tablet-width-10ch { width: 10ch !important }
+
+    /* Margin Begin*/
+    .tablet-m-0 { margin: 0}
+    .tablet-m-auto { margin: auto }
+    .tablet-ml-auto { margin-left: auto}
+    .tablet-m-inherit { margin: inherit }
+    .tablet-m-initial { margin: initial }
+    .tablet-m-unset { margin: unset }
+
+    /* Margin PX */
+    .tablet-m-1px { margin: 1px !important }
+    .tablet-m-2px { margin: 2px !important }
+    .tablet-m-3px { margin: 3px !important }
+    .tablet-m-4px { margin: 4px !important }
+    .tablet-m-5px { margin: 5px !important }
+    .tablet-m-6px { margin: 6px !important }
+    .tablet-m-7px { margin: 7px !important }
+    .tablet-m-8px { margin: 8px !important }
+    .tablet-m-9px { margin: 9px !important }
+    .tablet-m-10px { margin: 10px !important }
+
+    /* Margin PT */
+    .tablet-m-1pt{ margin: 1pt !important }
+    .tablet-m-2pt{ margin: 2pt !important }
+    .tablet-m-3pt{ margin: 3pt !important }
+    .tablet-m-4pt{ margin: 4pt !important }
+    .tablet-m-5pt{ margin: 5pt !important }
+    .tablet-m-6pt{ margin: 6pt !important }
+    .tablet-m-7pt{ margin: 7pt !important }
+    .tablet-m-8pt{ margin: 8pt !important }
+    .tablet-m-9pt{ margin: 9pt !important }
+    .tablet-m-10pt{ margin: 10pt !important }
+
+    /* Margin EM */
+    .tablet-m-1em { margin: 1em !important }
+    .tablet-m-2em { margin: 2em !important }
+    .tablet-m-3em { margin: 3em !important }
+    .tablet-m-4em { margin: 4em !important }
+    .tablet-m-5em { margin: 5em !important }
+    .tablet-m-6em { margin: 6em !important }
+    .tablet-m-7em { margin: 7em !important }
+    .tablet-m-8em { margin: 8em !important }
+    .tablet-m-9em { margin: 9em !important }
+    .tablet-m-10pt{ margin: 10em !important; }
+
+    /* Margin percentage */
+    .tablet-m-1per { margin: 10% !important }
+    .tablet-m-2per { margin: 20% !important }
+    .tablet-m-3per { margin: 30% !important }
+    .tablet-m-4per { margin: 40% !important }
+    .tablet-m-5per { margin: 50% !important }
+    .tablet-m-6per { margin: 60% !important }
+    .tablet-m-7per { margin: 70% !important }
+    .tablet-m-8per { margin: 80% !important }
+    .tablet-m-9per { margin: 90% !important }
+    .tablet-m-10per { margin: 100% !important }
+
+    /* Margin CH */
+    .tablet-m-1ch { margin: 1ch !important }
+    .tablet-m-2ch { margin: 2ch !important }
+    .tablet-m-3ch { margin: 3ch !important }
+    .tablet-m-4ch { margin: 4ch !important }
+    .tablet-m-5ch { margin: 5ch !important }
+    .tablet-m-6ch { margin: 6ch !important }
+    .tablet-m-7ch { margin: 7ch !important }
+    .tablet-m-8ch { margin: 8ch !important }
+    .tablet-m-9ch { margin: 9ch !important }
+    .tablet-m-10ch { margin: 10ch !important }
+
+    .tablet-mv-0 { margin-top: 0px !important; margin-bottom: 0px !important;}
+
+    .tablet-mv-1px { margin-top: 1px !important; margin-bottom: 1px !important;}
+    .tablet-mv-2px { margin-top: 2px !important; margin-bottom: 2px !important;}
+    .tablet-mv-3px { margin-top: 3px !important; margin-bottom: 3px !important;}
+    .tablet-mv-4px { margin-top: 4px !important; margin-bottom: 4px !important;}
+    .tablet-mv-5px { margin-top: 5px !important; margin-bottom: 5px !important;}
+    .tablet-mv-6px { margin-top: 6px !important; margin-bottom: 6px !important;}
+    .tablet-mv-7px { margin-top: 7px !important; margin-bottom: 7px !important;}
+    .tablet-mv-8px { margin-top: 8px !important; margin-bottom: 8px !important;}
+    .tablet-mv-9px { margin-top: 9px !important; margin-bottom: 9px !important;}
+    .tablet-mv-10px { margin-top: 10px !important; margin-bottom: 10px !important;}
+
+    .tablet-mv-1pt { margin-top: 1pt !important; margin-bottom: 1pt !important;}
+    .tablet-mv-2pt { margin-top: 2pt !important; margin-bottom: 2pt !important;}
+    .tablet-mv-3pt { margin-top: 3pt !important; margin-bottom: 3pt !important;}
+    .tablet-mv-4pt { margin-top: 4pt !important; margin-bottom: 4pt !important;}
+    .tablet-mv-5pt { margin-top: 5pt !important; margin-bottom: 5pt !important;}
+    .tablet-mv-6pt { margin-top: 6pt !important; margin-bottom: 6pt !important;}
+    .tablet-mv-7pt { margin-top: 7pt !important; margin-bottom: 7pt !important;}
+    .tablet-mv-8pt { margin-top: 8pt !important; margin-bottom: 8pt !important;}
+    .tablet-mv-9pt { margin-top: 9pt !important; margin-bottom: 9pt !important;}
+    .tablet-mv-10pt { margin-top: 10pt !important; margin-bottom: 10pt !important;}
+
+    .tablet-mv-1em { margin-top: 1em !important; margin-bottom: 1em !important;}
+    .tablet-mv-2em { margin-top: 2em !important; margin-bottom: 2em !important;}
+    .tablet-mv-3em { margin-top: 3em !important; margin-bottom: 3em !important;}
+    .tablet-mv-4em { margin-top: 4em !important; margin-bottom: 4em !important;}
+    .tablet-mv-5em { margin-top: 5em !important; margin-bottom: 5em !important;}
+    .tablet-mv-6em { margin-top: 6em !important; margin-bottom: 6em !important;}
+    .tablet-mv-7em { margin-top: 7em !important; margin-bottom: 7em !important;}
+    .tablet-mv-8em { margin-top: 8em !important; margin-bottom: 8em !important;}
+    .tablet-mv-9em { margin-top: 9em !important; margin-bottom: 9em !important;}
+    .tablet-mv-10em { margin-top: 10em !important; margin-bottom: 10em !important;}
+
+    .tablet-mv-1per { margin-top: 10% !important; margin-bottom: 10% !important;}
+    .tablet-mv-2per { margin-top: 20% !important; margin-bottom: 20% !important;}
+    .tablet-mv-3per { margin-top: 30% !important; margin-bottom: 30% !important;}
+    .tablet-mv-4per { margin-top: 40% !important; margin-bottom: 40% !important;}
+    .tablet-mv-5per { margin-top: 50% !important; margin-bottom: 50% !important;}
+    .tablet-mv-6per { margin-top: 60% !important; margin-bottom: 60% !important;}
+    .tablet-mv-7per { margin-top: 70% !important; margin-bottom: 70% !important;}
+    .tablet-mv-8per { margin-top: 80% !important; margin-bottom: 80% !important;}
+    .tablet-mv-9per { margin-top: 90% !important; margin-bottom: 90% !important;}
+    .tablet-mv-10per { margin-top: 100% !important; margin-bottom: 100% !important;}
+
+    .tablet-mv-1ch { margin-top: 1ch !important; margin-bottom: 1ch !important;}
+    .tablet-mv-2ch { margin-top: 2ch !important; margin-bottom: 2ch !important;}
+    .tablet-mv-3ch { margin-top: 3ch !important; margin-bottom: 3ch !important;}
+    .tablet-mv-4ch { margin-top: 4ch !important; margin-bottom: 4ch !important;}
+    .tablet-mv-5ch { margin-top: 5ch !important; margin-bottom: 5ch !important;}
+    .tablet-mv-6ch { margin-top: 6ch !important; margin-bottom: 6ch !important;}
+    .tablet-mv-7ch { margin-top: 7ch !important; margin-bottom: 7ch !important;}
+    .tablet-mv-8ch { margin-top: 8ch !important; margin-bottom: 8ch !important;}
+    .tablet-mv-9ch { margin-top: 9ch !important; margin-bottom: 9ch !important;}
+    .tablet-mv-10ch { margin-top: 10ch !important; margin-bottom: 10ch !important;}
+
+    .tablet-mh-0 { margin-right: 0px !important; margin-left: 0px !important; }
+
+    .tablet-mh-1px { margin-right: 1px !important; margin-left: 1px !important;}
+    .tablet-mh-2px { margin-right: 2px !important; margin-left: 2px !important;}
+    .tablet-mh-3px { margin-right: 3px !important; margin-left: 3px !important;}
+    .tablet-mh-4px { margin-right: 4px !important; margin-left: 4px !important;}
+    .tablet-mh-5px { margin-right: 5px !important; margin-left: 5px !important;}
+    .tablet-mh-6px { margin-right: 6px !important; margin-left: 6px !important;}
+    .tablet-mh-7px { margin-right: 7px !important; margin-left: 7px !important;}
+    .tablet-mh-8px { margin-right: 8px !important; margin-left: 8px !important;}
+    .tablet-mh-9px { margin-right: 9px !important; margin-left: 9px !important;}
+    .tablet-mh-10px { margin-right: 10px !important; margin-left: 10px !important;}
+
+    .tablet-mh-1pt { margin-right: 1pt !important; margin-left: 1pt !important;}
+    .tablet-mh-2pt { margin-right: 2pt !important; margin-left: 2pt !important;}
+    .tablet-mh-3pt { margin-right: 3pt !important; margin-left: 3pt !important;}
+    .tablet-mh-4pt { margin-right: 4pt !important; margin-left: 4pt !important;}
+    .tablet-mh-5pt { margin-right: 5pt !important; margin-left: 5pt !important;}
+    .tablet-mh-6pt { margin-right: 6pt !important; margin-left: 6pt !important;}
+    .tablet-mh-7pt { margin-right: 7pt !important; margin-left: 7pt !important;}
+    .tablet-mh-8pt { margin-right: 8pt !important; margin-left: 8pt !important;}
+    .tablet-mh-9pt { margin-right: 9pt !important; margin-left: 9pt !important;}
+    .tablet-mh-10pt { margin-right: 10pt !important; margin-left: 10pt !important;}
+
+    .tablet-mh-1em { margin-right: 1em !important; margin-left: 1em !important;}
+    .tablet-mh-2em { margin-right: 2em !important; margin-left: 2em !important;}
+    .tablet-mh-3em { margin-right: 3em !important; margin-left: 3em !important;}
+    .tablet-mh-4em { margin-right: 4em !important; margin-left: 4em !important;}
+    .tablet-mh-5em { margin-right: 5em !important; margin-left: 5em !important;}
+    .tablet-mh-6em { margin-right: 6em !important; margin-left: 6em !important;}
+    .tablet-mh-7em { margin-right: 7em !important; margin-left: 7em !important;}
+    .tablet-mh-8em { margin-right: 8em !important; margin-left: 8em !important;}
+    .tablet-mh-9em { margin-right: 9em !important; margin-left: 9em !important;}
+    .tablet-mh-10em { margin-right: 10em !important; margin-left: 10em !important;}
+
+    .tablet-mh-1per { margin-right: 10% !important; margin-left: 10% !important;}
+    .tablet-mh-2per { margin-right: 20% !important; margin-left: 20% !important;}
+    .tablet-mh-3per { margin-right: 30% !important; margin-left: 30% !important;}
+    .tablet-mh-4per { margin-right: 40% !important; margin-left: 40% !important;}
+    .tablet-mh-5per { margin-right: 50% !important; margin-left: 50% !important;}
+    .tablet-mh-6per { margin-right: 60% !important; margin-left: 60% !important;}
+    .tablet-mh-7per { margin-right: 70% !important; margin-left: 70% !important;}
+    .tablet-mh-8per { margin-right: 80% !important; margin-left: 80% !important;}
+    .tablet-mh-9per { margin-right: 90% !important; margin-left: 90% !important;}
+    .tablet-mh-10per { margin-right: 100% !important; margin-left: 100% !important;}
+
+    .tablet-mh-1ch { margin-right: 1ch !important; margin-left: 1ch !important;}
+    .tablet-mh-2ch { margin-right: 2ch !important; margin-left: 2ch !important;}
+    .tablet-mh-3ch { margin-right: 3ch !important; margin-left: 3ch !important;}
+    .tablet-mh-4ch { margin-right: 4ch !important; margin-left: 4ch !important;}
+    .tablet-mh-5ch { margin-right: 5ch !important; margin-left: 5ch !important;}
+    .tablet-mh-6ch { margin-right: 6ch !important; margin-left: 6ch !important;}
+    .tablet-mh-7ch { margin-right: 7ch !important; margin-left: 7ch !important;}
+    .tablet-mh-8ch { margin-right: 8ch !important; margin-left: 8ch !important;}
+    .tablet-mh-9ch { margin-right: 9ch !important; margin-left: 9ch !important;}
+    .tablet-mh-10ch { margin-right: 10ch !important; margin-left: 10ch !important;}
+
+    .tablet-ml-1px { margin-left: 1px !important }
+    .tablet-ml-2px { margin-left: 2px !important }
+    .tablet-ml-3px { margin-left: 3px !important }
+    .tablet-ml-4px { margin-left: 4px !important }
+    .tablet-ml-5px { margin-left: 5px !important }
+    .tablet-ml-6px { margin-left: 6px !important }
+    .tablet-ml-7px { margin-left: 7px !important }
+    .tablet-ml-8px { margin-left: 8px !important }
+    .tablet-ml-9px { margin-left: 9px !important }
+    .tablet-ml-10px { margin-left: 10px !important }
+
+    .tablet-ml-1pt { margin-left: 1pt !important }
+    .tablet-ml-2pt { margin-left: 2pt !important }
+    .tablet-ml-3pt { margin-left: 3pt !important }
+    .tablet-ml-4pt { margin-left: 4pt !important }
+    .tablet-ml-5pt { margin-left: 5pt !important }
+    .tablet-ml-6pt { margin-left: 6pt !important }
+    .tablet-ml-7pt { margin-left: 7pt !important }
+    .tablet-ml-8pt { margin-left: 8pt !important }
+    .tablet-ml-9pt { margin-left: 9pt !important }
+    .tablet-ml-10pt { margin-left: 10pt !important }
+
+    .tablet-ml-1em { margin-left: 1em !important }
+    .tablet-ml-2em { margin-left: 2em !important }
+    .tablet-ml-3em { margin-left: 3em !important }
+    .tablet-ml-4em { margin-left: 4em !important }
+    .tablet-ml-5em { margin-left: 5em !important }
+    .tablet-ml-6em { margin-left: 6em !important }
+    .tablet-ml-7em { margin-left: 7em !important }
+    .tablet-ml-8em { margin-left: 8em !important }
+    .tablet-ml-9em { margin-left: 9em !important }
+    .tablet-ml-10em { margin-left: 10em !important }
+
+    .tablet-ml-1per { margin-left: 10% !important }
+    .tablet-ml-2per { margin-left: 20% !important }
+    .tablet-ml-3per { margin-left: 30% !important }
+    .tablet-ml-4per { margin-left: 40% !important }
+    .tablet-ml-5per { margin-left: 50% !important }
+    .tablet-ml-6per { margin-left: 60% !important }
+    .tablet-ml-7per { margin-left: 70% !important }
+    .tablet-ml-8per { margin-left: 80% !important }
+    .tablet-ml-9per { margin-left: 90% !important }
+    .tablet-ml-10per { margin-left: 100% !important }
+
+    .tablet-ml-1ch { margin-left: 1ch !important }
+    .tablet-ml-2ch { margin-left: 2ch !important }
+    .tablet-ml-3ch { margin-left: 3ch !important }
+    .tablet-ml-4ch { margin-left: 4ch !important }
+    .tablet-ml-5ch { margin-left: 5ch !important }
+    .tablet-ml-6ch { margin-left: 6ch !important }
+    .tablet-ml-7ch { margin-left: 7ch !important }
+    .tablet-ml-8ch { margin-left: 8ch !important }
+    .tablet-ml-9ch { margin-left: 9ch !important }
+    .tablet-ml-10ch { margin-left: 10ch !important }
+
+    .tablet-mt-auto {margin-top: auto !important }
+
+    .tablet-mt-1px { margin-top: 1px !important }
+    .tablet-mt-2px { margin-top: 2px !important }
+    .tablet-mt-3px { margin-top: 3px !important }
+    .tablet-mt-4px { margin-top: 4px !important }
+    .tablet-mt-5px { margin-top: 5px !important }
+    .tablet-mt-6px { margin-top: 6px !important }
+    .tablet-mt-7px { margin-top: 7px !important }
+    .tablet-mt-8px { margin-top: 8px !important }
+    .tablet-mt-9px { margin-top: 9px !important }
+    .tablet-mt-10px { margin-top: 10px !important }
+
+    .tablet-mt-1pt { margin-top: 1pt !important }
+    .tablet-mt-2pt { margin-top: 2pt !important }
+    .tablet-mt-3pt { margin-top: 3pt !important }
+    .tablet-mt-4pt { margin-top: 4pt !important }
+    .tablet-mt-5pt { margin-top: 5pt !important }
+    .tablet-mt-6pt { margin-top: 6pt !important }
+    .tablet-mt-7pt { margin-top: 7pt !important }
+    .tablet-mt-8pt { margin-top: 8pt !important }
+    .tablet-mt-9pt { margin-top: 9pt !important }
+    .tablet-mt-10pt { margin-top: 10pt !important }
+
+    .tablet-mt-1em { margin-top: 1em !important }
+    .tablet-mt-2em { margin-top: 2em !important }
+    .tablet-mt-3em { margin-top: 3em !important }
+    .tablet-mt-4em { margin-top: 4em !important }
+    .tablet-mt-5em { margin-top: 5em !important }
+    .tablet-mt-6em { margin-top: 6em !important }
+    .tablet-mt-7em { margin-top: 7em !important }
+    .tablet-mt-8em { margin-top: 8em !important }
+    .tablet-mt-9em { margin-top: 9em !important }
+    .tablet-mt-10em { margin-top: 10em !important }
+
+    .tablet-mt-1per { margin-top: 10% !important }
+    .tablet-mt-2per { margin-top: 20% !important }
+    .tablet-mt-3per { margin-top: 30% !important }
+    .tablet-mt-4per { margin-top: 40% !important }
+    .tablet-mt-5per { margin-top: 50% !important }
+    .tablet-mt-6per { margin-top: 60% !important }
+    .tablet-mt-7per { margin-top: 70% !important }
+    .tablet-mt-8per { margin-top: 80% !important }
+    .tablet-mt-9per { margin-top: 90% !important }
+    .tablet-mt-10per { margin-top: 100% !important }
+
+    .tablet-mt-1ch { margin-top: 1ch !important }
+    .tablet-mt-2ch { margin-top: 2ch !important }
+    .tablet-mt-3ch { margin-top: 3ch !important }
+    .tablet-mt-4ch { margin-top: 4ch !important }
+    .tablet-mt-5ch { margin-top: 5ch !important }
+    .tablet-mt-6ch { margin-top: 6ch !important }
+    .tablet-mt-7ch { margin-top: 7ch !important }
+    .tablet-mt-8ch { margin-top: 8ch !important }
+    .tablet-mt-9ch { margin-top: 9ch !important }
+    .tablet-mt-10ch { margin-top: 10ch !important }
+
+    .tablet-mr-auto { margin-right: auto !important }
+
+    .tablet-mr-1px { margin-right: 1px !important }
+    .tablet-mr-2px { margin-right: 2px !important }
+    .tablet-mr-3px { margin-right: 3px !important }
+    .tablet-mr-4px { margin-right: 4px !important }
+    .tablet-mr-5px { margin-right: 5px !important }
+    .tablet-mr-6px { margin-right: 6px !important }
+    .tablet-mr-7px { margin-right: 7px !important }
+    .tablet-mr-8px { margin-right: 8px !important }
+    .tablet-mr-9px { margin-right: 9px !important }
+    .tablet-mr-10px { margin-right: 10px !important }
+
+    .tablet-mr-1pt { margin-right: 1pt !important }
+    .tablet-mr-2pt { margin-right: 2pt !important }
+    .tablet-mr-3pt { margin-right: 3pt !important }
+    .tablet-mr-4pt { margin-right: 4pt !important }
+    .tablet-mr-5pt { margin-right: 5pt !important }
+    .tablet-mr-6pt { margin-right: 6pt !important }
+    .tablet-mr-7pt { margin-right: 7pt !important }
+    .tablet-mr-8pt { margin-right: 8pt !important }
+    .tablet-mr-9pt { margin-right: 9pt !important }
+    .tablet-mr-10pt { margin-right: 10pt !important }
+
+    .tablet-mr-1em { margin-right: 1em !important }
+    .tablet-mr-2em { margin-right: 2em !important }
+    .tablet-mr-3em { margin-right: 3em !important }
+    .tablet-mr-4em { margin-right: 4em !important }
+    .tablet-mr-5em { margin-right: 5em !important }
+    .tablet-mr-6em { margin-right: 6em !important }
+    .tablet-mr-7em { margin-right: 7em !important }
+    .tablet-mr-8em { margin-right: 8em !important }
+    .tablet-mr-9em { margin-right: 9em !important }
+    .tablet-mr-10em { margin-right: 10em !important }
+
+    .tablet-mr-1per { margin-right: 10% !important }
+    .tablet-mr-2per { margin-right: 20% !important }
+    .tablet-mr-3per { margin-right: 30% !important }
+    .tablet-mr-4per { margin-right: 40% !important }
+    .tablet-mr-5per { margin-right: 50% !important }
+    .tablet-mr-6per { margin-right: 60% !important }
+    .tablet-mr-7per { margin-right: 70% !important }
+    .tablet-mr-8per { margin-right: 80% !important }
+    .tablet-mr-9per { margin-right: 90% !important }
+    .tablet-mr-10per { margin-right: 100% !important }
+
+    .tablet-mr-1ch { margin-right: 1ch !important }
+    .tablet-mr-2ch { margin-right: 2ch !important }
+    .tablet-mr-3ch { margin-right: 3ch !important }
+    .tablet-mr-4ch { margin-right: 4ch !important }
+    .tablet-mr-5ch { margin-right: 5ch !important }
+    .tablet-mr-6ch { margin-right: 6ch !important }
+    .tablet-mr-7ch { margin-right: 7ch !important }
+    .tablet-mr-8ch { margin-right: 8ch !important }
+    .tablet-mr-9ch { margin-right: 9ch !important }
+    .tablet-mr-10ch { margin-right: 10ch !important }
+
+    .tablet-mb-auto { margin-bottom: auto !important }
+
+    .tablet-mb-1px { margin-bottom: 1px !important }
+    .tablet-mb-2px { margin-bottom: 2px !important }
+    .tablet-mb-3px { margin-bottom: 3px !important }
+    .tablet-mb-4px { margin-bottom: 4px !important }
+    .tablet-mb-5px { margin-bottom: 5px !important }
+    .tablet-mb-6px { margin-bottom: 6px !important }
+    .tablet-mb-7px { margin-bottom: 7px !important }
+    .tablet-mb-8px { margin-bottom: 8px !important }
+    .tablet-mb-9px { margin-bottom: 9px !important }
+    .tablet-mb-10px { margin-bottom: 10px !important }
+
+    .tablet-mb-1pt { margin-bottom: 1pt !important }
+    .tablet-mb-2pt { margin-bottom: 2pt !important }
+    .tablet-mb-3pt { margin-bottom: 3pt !important }
+    .tablet-mb-4pt { margin-bottom: 4pt !important }
+    .tablet-mb-5pt { margin-bottom: 5pt !important }
+    .tablet-mb-6pt { margin-bottom: 6pt !important }
+    .tablet-mb-7pt { margin-bottom: 7pt !important }
+    .tablet-mb-8pt { margin-bottom: 8pt !important }
+    .tablet-mb-9pt { margin-bottom: 9pt !important }
+    .tablet-mb-10pt { margin-bottom: 10pt !important }
+
+    .tablet-mb-1em { margin-bottom: 1em !important }
+    .tablet-mb-2em { margin-bottom: 2em !important }
+    .tablet-mb-3em { margin-bottom: 3em !important }
+    .tablet-mb-4em { margin-bottom: 4em !important }
+    .tablet-mb-5em { margin-bottom: 5em !important }
+    .tablet-mb-6em { margin-bottom: 6em !important }
+    .tablet-mb-7em { margin-bottom: 7em !important }
+    .tablet-mb-8em { margin-bottom: 8em !important }
+    .tablet-mb-9em { margin-bottom: 9em !important }
+    .tablet-mb-10em { margin-bottom: 10em !important }
+
+    .tablet-mb-1per { margin-bottom: 10% !important }
+    .tablet-mb-2per { margin-bottom: 20% !important }
+    .tablet-mb-3per { margin-bottom: 30% !important }
+    .tablet-mb-4per { margin-bottom: 40% !important }
+    .tablet-mb-5per { margin-bottom: 50% !important }
+    .tablet-mb-6per { margin-bottom: 60% !important }
+    .tablet-mb-7per { margin-bottom: 70% !important }
+    .tablet-mb-8per { margin-bottom: 80% !important }
+    .tablet-mb-9per { margin-bottom: 90% !important }
+    .tablet-mb-10per { margin-bottom: 100% !important }
+
+    .tablet-mb-1ch { margin-bottom: 1ch !important }
+    .tablet-mb-2ch { margin-bottom: 2ch !important }
+    .tablet-mb-3ch { margin-bottom: 3ch !important }
+    .tablet-mb-4ch { margin-bottom: 4ch !important }
+    .tablet-mb-5ch { margin-bottom: 5ch !important }
+    .tablet-mb-6ch { margin-bottom: 6ch !important }
+    .tablet-mb-7ch { margin-bottom: 7ch !important }
+    .tablet-mb-8ch { margin-bottom: 8ch !important }
+    .tablet-mb-9ch { margin-bottom: 9ch !important }
+    .tablet-mb-10ch { margin-bottom: 10ch !important }
+
+    /* padding Begin*/
+    .tablet-p-0 { padding: 0}
+    .tablet-p-auto { padding: auto }
+    .tablet-p-inherit { padding: inherit }
+    .tablet-p-initial { padding: initial }
+    .tablet-p-unset { padding: unset }
+
+/* padding PX */
+    .tablet-p-1px { padding: 1px !important }
+    .tablet-p-2px { padding: 2px !important }
+    .tablet-p-3px { padding: 3px !important }
+    .tablet-p-4px { padding: 4px !important }
+    .tablet-p-5px { padding: 5px !important }
+    .tablet-p-6px { padding: 6px !important }
+    .tablet-p-7px { padding: 7px !important }
+    .tablet-p-8px { padding: 8px !important }
+    .tablet-p-9px { padding: 9px !important }
+    .tablet-p-10px { padding: 10px !important }
+
+    .tablet-pl-1px { padding-left: 1px !important }
+    .tablet-pl-2px { padding-left: 2px !important }
+    .tablet-pl-3px { padding-left: 3px !important }
+    .tablet-pl-4px { padding-left: 4px !important }
+    .tablet-pl-5px { padding-left: 5px !important }
+    .tablet-pl-6px { padding-left: 6px !important }
+    .tablet-pl-7px { padding-left: 7px !important }
+    .tablet-pl-8px { padding-left: 8px !important }
+    .tablet-pl-9px { padding-left: 9px !important }
+    .tablet-pl-10px { padding-left: 10px !important }
+
+/* padding PT */
+    .tablet-p-1pt{ padding: 1pt !important }
+    .tablet-p-2pt{ padding: 2pt !important }
+    .tablet-p-3pt{ padding: 3pt !important }
+    .tablet-p-4pt{ padding: 4pt !important }
+    .tablet-p-5pt{ padding: 5pt !important }
+    .tablet-p-6pt{ padding: 6pt !important }
+    .tablet-p-7pt{ padding: 7pt !important }
+    .tablet-p-8pt{ padding: 8pt !important }
+    .tablet-p-9pt{ padding: 9pt !important }
+    .tablet-p-10pt{ padding: 10pt !important }
+
+    .tablet-pl-1pt{ padding-left: 1pt !important }
+    .tablet-pl-2pt{ padding-left: 2pt !important }
+    .tablet-pl-3pt{ padding-left: 3pt !important }
+    .tablet-pl-4pt{ padding-left: 4pt !important }
+    .tablet-pl-5pt{ padding-left: 5pt !important }
+    .tablet-pl-6pt{ padding-left: 6pt !important }
+    .tablet-pl-7pt{ padding-left: 7pt !important }
+    .tablet-pl-8pt{ padding-left: 8pt !important }
+    .tablet-pl-9pt{ padding-left: 9pt !important }
+    .tablet-pl-10pt{ padding-left: 10pt !important }
+
+/* padding EM */
+    .tablet-p-1em { padding: 1em !important }
+    .tablet-p-2em { padding: 2em !important }
+    .tablet-p-3em { padding: 3em !important }
+    .tablet-p-4em { padding: 4em !important }
+    .tablet-p-5em { padding: 5em !important }
+    .tablet-p-6em { padding: 6em !important }
+    .tablet-p-7em { padding: 7em !important }
+    .tablet-p-8em { padding: 8em !important }
+    .tablet-p-9em { padding: 9em !important }
+    .tablet-p-10em{ padding: 10em !important; }
+
+    .tablet-pl-1em { padding-left: 1em !important }
+    .tablet-pl-2em { padding-left: 2em !important }
+    .tablet-pl-3em { padding-left: 3em !important }
+    .tablet-pl-4em { padding-left: 4em !important }
+    .tablet-pl-5em { padding-left: 5em !important }
+    .tablet-pl-6em { padding-left: 6em !important }
+    .tablet-pl-7em { padding-left: 7em !important }
+    .tablet-pl-8em { padding-left: 8em !important }
+    .tablet-pl-9em { padding-left: 9em !important }
+    .tablet-pl-10em{ padding-left: 10em !important; }
+
+/* padding percentage */
+    .tablet-p-1per { padding: 10% !important }
+    .tablet-p-2per { padding: 20% !important }
+    .tablet-p-3per { padding: 30% !important }
+    .tablet-p-4per { padding: 40% !important }
+    .tablet-p-5per { padding: 50% !important }
+    .tablet-p-6per { padding: 60% !important }
+    .tablet-p-7per { padding: 70% !important }
+    .tablet-p-8per { padding: 80% !important }
+    .tablet-p-9per { padding: 90% !important }
+    .tablet-p-10per { padding: 100% !important }
+
+    .tablet-pl-1per { padding-left: 10% !important }
+    .tablet-pl-2per { padding-left: 20% !important }
+    .tablet-pl-3per { padding-left: 30% !important }
+    .tablet-pl-4per { padding-left: 40% !important }
+    .tablet-pl-5per { padding-left: 50% !important }
+    .tablet-pl-6per { padding-left: 60% !important }
+    .tablet-pl-7per { padding-left: 70% !important }
+    .tablet-pl-8per { padding-left: 80% !important }
+    .tablet-pl-9per { padding-left: 90% !important }
+    .tablet-pl-10per { padding-left: 100% !important }
+
+/* padding CH */
+    .tablet-p-1ch { padding: 1ch !important }
+    .tablet-p-2ch { padding: 2ch !important }
+    .tablet-p-3ch { padding: 3ch !important }
+    .tablet-p-4ch { padding: 4ch !important }
+    .tablet-p-5ch { padding: 5ch !important }
+    .tablet-p-6ch { padding: 6ch !important }
+    .tablet-p-7ch { padding: 7ch !important }
+    .tablet-p-8ch { padding: 8ch !important }
+    .tablet-p-9ch { padding: 9ch !important }
+    .tablet-p-10ch { padding: 10ch !important }
+
+    .tablet-pl-1ch { padding-left: 1ch !important }
+    .tablet-pl-2ch { padding-left: 2ch !important }
+    .tablet-pl-3ch { padding-left: 3ch !important }
+    .tablet-pl-4ch { padding-left: 4ch !important }
+    .tablet-pl-5ch { padding-left: 5ch !important }
+    .tablet-pl-6ch { padding-left: 6ch !important }
+    .tablet-pl-7ch { padding-left: 7ch !important }
+    .tablet-pl-8ch { padding-left: 8ch !important }
+    .tablet-pl-9ch { padding-left: 9ch !important }
+    .tablet-pl-10ch { padding-left: 10ch !important }
+
+    .tablet-pt-1px { padding-top: 1px !important}
+    .tablet-pt-2px { padding-top: 2px !important}
+    .tablet-pt-3px { padding-top: 3px !important}
+    .tablet-pt-4px { padding-top: 4px !important}
+    .tablet-pt-5px { padding-top: 5px !important}
+    .tablet-pt-6px { padding-top: 6px !important}
+    .tablet-pt-7px { padding-top: 7px !important}
+    .tablet-pt-8px { padding-top: 8px !important}
+    .tablet-pt-9px { padding-top: 9px !important}
+    .tablet-pt-10px { padding-top: 10px !important}
+
+    .tablet-pt-1pt { padding-top: 1pt !important}
+    .tablet-pt-2pt { padding-top: 2pt !important}
+    .tablet-pt-3pt { padding-top: 3pt !important}
+    .tablet-pt-4pt { padding-top: 4pt !important}
+    .tablet-pt-5pt { padding-top: 5pt !important}
+    .tablet-pt-6pt { padding-top: 6pt !important}
+    .tablet-pt-7pt { padding-top: 7pt !important}
+    .tablet-pt-8pt { padding-top: 8pt !important}
+    .tablet-pt-9pt { padding-top: 9pt !important}
+    .tablet-pt-10pt { padding-top: 10pt !important}
+
+    .tablet-pt-1em { padding-top: 1em !important}
+    .tablet-pt-2em { padding-top: 2em !important}
+    .tablet-pt-3em { padding-top: 3em !important}
+    .tablet-pt-4em { padding-top: 4em !important}
+    .tablet-pt-5em { padding-top: 5em !important}
+    .tablet-pt-6em { padding-top: 6em !important}
+    .tablet-pt-7em { padding-top: 7em !important}
+    .tablet-pt-8em { padding-top: 8em !important}
+    .tablet-pt-9em { padding-top: 9em !important}
+    .tablet-pt-10em { padding-top: 10em !important}
+
+    .tablet-pt-1per { padding-top: 10% !important}
+    .tablet-pt-2per { padding-top: 20% !important}
+    .tablet-pt-3per { padding-top: 30% !important}
+    .tablet-pt-4per { padding-top: 40% !important}
+    .tablet-pt-5per { padding-top: 50% !important}
+    .tablet-pt-6per { padding-top: 60% !important}
+    .tablet-pt-7per { padding-top: 70% !important}
+    .tablet-pt-8per { padding-top: 80% !important}
+    .tablet-pt-9per { padding-top: 90% !important}
+    .tablet-pt-10per { padding-top: 100% !important}
+
+    .tablet-pt-1ch { padding-top: 1ch !important}
+    .tablet-pt-2ch { padding-top: 2ch !important}
+    .tablet-pt-3ch { padding-top: 3ch !important}
+    .tablet-pt-4ch { padding-top: 4ch !important}
+    .tablet-pt-5ch { padding-top: 5ch !important}
+    .tablet-pt-6ch { padding-top: 6ch !important}
+    .tablet-pt-7ch { padding-top: 7ch !important}
+    .tablet-pt-8ch { padding-top: 8ch !important}
+    .tablet-pt-9ch { padding-top: 9ch !important}
+    .tablet-pt-10ch { padding-top: 10ch !important}
+
+    .tablet-pr-1px { padding-right: 1px !important}
+    .tablet-pr-2px { padding-right: 2px !important}
+    .tablet-pr-3px { padding-right: 3px !important}
+    .tablet-pr-4px { padding-right: 4px !important}
+    .tablet-pr-5px { padding-right: 5px !important}
+    .tablet-pr-6px { padding-right: 6px !important}
+    .tablet-pr-7px { padding-right: 7px !important}
+    .tablet-pr-8px { padding-right: 8px !important}
+    .tablet-pr-9px { padding-right: 9px !important}
+    .tablet-pr-10px { padding-right: 10px !important}
+
+    .tablet-pr-1pt { padding-right: 1pt !important}
+    .tablet-pr-2pt { padding-right: 2pt !important}
+    .tablet-pr-3pt { padding-right: 3pt !important}
+    .tablet-pr-4pt { padding-right: 4pt !important}
+    .tablet-pr-5pt { padding-right: 5pt !important}
+    .tablet-pr-6pt { padding-right: 6pt !important}
+    .tablet-pr-7pt { padding-right: 7pt !important}
+    .tablet-pr-8pt { padding-right: 8pt !important}
+    .tablet-pr-9pt { padding-right: 9pt !important}
+    .tablet-pr-10pt { padding-right: 10pt !important}
+
+    .tablet-pr-1em { padding-right: 1em !important}
+    .tablet-pr-2em { padding-right: 2em !important}
+    .tablet-pr-3em { padding-right: 3em !important}
+    .tablet-pr-4em { padding-right: 4em !important}
+    .tablet-pr-5em { padding-right: 5em !important}
+    .tablet-pr-6em { padding-right: 6em !important}
+    .tablet-pr-7em { padding-right: 7em !important}
+    .tablet-pr-8em { padding-right: 8em !important}
+    .tablet-pr-9em { padding-right: 9em !important}
+    .tablet-pr-10em { padding-right: 10em !important}
+
+    .tablet-pr-1per { padding-right: 10% !important}
+    .tablet-pr-2per { padding-right: 20% !important}
+    .tablet-pr-3per { padding-right: 30% !important}
+    .tablet-pr-4per { padding-right: 40% !important}
+    .tablet-pr-5per { padding-right: 50% !important}
+    .tablet-pr-6per { padding-right: 60% !important}
+    .tablet-pr-7per { padding-right: 70% !important}
+    .tablet-pr-8per { padding-right: 80% !important}
+    .tablet-pr-9per { padding-right: 90% !important}
+    .tablet-pr-10per { padding-right: 100% !important}
+
+    .tablet-pr-1ch { padding-right: 1ch !important}
+    .tablet-pr-2ch { padding-right: 2ch !important}
+    .tablet-pr-3ch { padding-right: 3ch !important}
+    .tablet-pr-4ch { padding-right: 4ch !important}
+    .tablet-pr-5ch { padding-right: 5ch !important}
+    .tablet-pr-6ch { padding-right: 6ch !important}
+    .tablet-pr-7ch { padding-right: 7ch !important}
+    .tablet-pr-8ch { padding-right: 8ch !important}
+    .tablet-pr-9ch { padding-right: 9ch !important}
+    .tablet-pr-10ch { padding-right: 10ch !important}
+
+    .tablet-pb-1px { padding-bottom: 1px !important}
+    .tablet-pb-2px { padding-bottom: 2px !important}
+    .tablet-pb-3px { padding-bottom: 3px !important}
+    .tablet-pb-4px { padding-bottom: 4px !important}
+    .tablet-pb-5px { padding-bottom: 5px !important}
+    .tablet-pb-6px { padding-bottom: 6px !important}
+    .tablet-pb-7px { padding-bottom: 7px !important}
+    .tablet-pb-8px { padding-bottom: 8px !important}
+    .tablet-pb-9px { padding-bottom: 9px !important}
+    .tablet-pb-10px { padding-bottom: 10px !important}
+
+    .tablet-pb-1pt { padding-bottom: 1pt !important}
+    .tablet-pb-2pt { padding-bottom: 2pt !important}
+    .tablet-pb-3pt { padding-bottom: 3pt !important}
+    .tablet-pb-4pt { padding-bottom: 4pt !important}
+    .tablet-pb-5pt { padding-bottom: 5pt !important}
+    .tablet-pb-6pt { padding-bottom: 6pt !important}
+    .tablet-pb-7pt { padding-bottom: 7pt !important}
+    .tablet-pb-8pt { padding-bottom: 8pt !important}
+    .tablet-pb-9pt { padding-bottom: 9pt !important}
+    .tablet-pb-10pt { padding-bottom: 10pt !important}
+
+    .tablet-pb-1em { padding-bottom: 1em !important}
+    .tablet-pb-2em { padding-bottom: 2em !important}
+    .tablet-pb-3em { padding-bottom: 3em !important}
+    .tablet-pb-4em { padding-bottom: 4em !important}
+    .tablet-pb-5em { padding-bottom: 5em !important}
+    .tablet-pb-6em { padding-bottom: 6em !important}
+    .tablet-pb-7em { padding-bottom: 7em !important}
+    .tablet-pb-8em { padding-bottom: 8em !important}
+    .tablet-pb-9em { padding-bottom: 9em !important}
+    .tablet-pb-10em { padding-bottom: 10em !important}
+
+    .tablet-pb-1per { padding-bottom: 10% !important}
+    .tablet-pb-2per { padding-bottom: 20% !important}
+    .tablet-pb-3per { padding-bottom: 30% !important}
+    .tablet-pb-4per { padding-bottom: 40% !important}
+    .tablet-pb-5per { padding-bottom: 50% !important}
+    .tablet-pb-6per { padding-bottom: 60% !important}
+    .tablet-pb-7per { padding-bottom: 70% !important}
+    .tablet-pb-8per { padding-bottom: 80% !important}
+    .tablet-pb-9per { padding-bottom: 90% !important}
+    .tablet-pb-10per { padding-bottom: 100% !important}
+
+    .tablet-pb-1ch { padding-bottom: 1ch !important}
+    .tablet-pb-2ch { padding-bottom: 2ch !important}
+    .tablet-pb-3ch { padding-bottom: 3ch !important}
+    .tablet-pb-4ch { padding-bottom: 4ch !important}
+    .tablet-pb-5ch { padding-bottom: 5ch !important}
+    .tablet-pb-6ch { padding-bottom: 6ch !important}
+    .tablet-pb-7ch { padding-bottom: 7ch !important}
+    .tablet-pb-8ch { padding-bottom: 8ch !important}
+    .tablet-pb-9ch { padding-bottom: 9ch !important}
+    .tablet-pb-10ch { padding-bottom: 10ch !important}
+
+    .tablet-pv-1px { padding-top: 0 !important; padding-bottom: 0 !important;}
+
+    .tablet-pv-1px { padding-top: 1px !important; padding-bottom: 1px !important;}
+    .tablet-pv-2px { padding-top: 2px !important; padding-bottom: 2px !important;}
+    .tablet-pv-3px { padding-top: 3px !important; padding-bottom: 3px !important;}
+    .tablet-pv-4px { padding-top: 4px !important; padding-bottom: 4px !important;}
+    .tablet-pv-5px { padding-top: 5px !important; padding-bottom: 5px !important;}
+    .tablet-pv-6px { padding-top: 6px !important; padding-bottom: 6px !important;}
+    .tablet-pv-7px { padding-top: 7px !important; padding-bottom: 7px !important;}
+    .tablet-pv-8px { padding-top: 8px !important; padding-bottom: 8px !important;}
+    .tablet-pv-9px { padding-top: 9px !important; padding-bottom: 9px !important;}
+    .tablet-pv-10px { padding-top: 10px !important; padding-bottom: 10px !important;}
+
+    .tablet-pv-1pt { padding-top: 1pt !important; padding-bottom: 1pt !important;}
+    .tablet-pv-2pt { padding-top: 2pt !important; padding-bottom: 2pt !important;}
+    .tablet-pv-3pt { padding-top: 3pt !important; padding-bottom: 3pt !important;}
+    .tablet-pv-4pt { padding-top: 4pt !important; padding-bottom: 4pt !important;}
+    .tablet-pv-5pt { padding-top: 5pt !important; padding-bottom: 5pt !important;}
+    .tablet-pv-6pt { padding-top: 6pt !important; padding-bottom: 6pt !important;}
+    .tablet-pv-7pt { padding-top: 7pt !important; padding-bottom: 7pt !important;}
+    .tablet-pv-8pt { padding-top: 8pt !important; padding-bottom: 8pt !important;}
+    .tablet-pv-9pt { padding-top: 9pt !important; padding-bottom: 9pt !important;}
+    .tablet-pv-10pt { padding-top: 10pt !important; padding-bottom: 10pt !important;}
+
+    .tablet-pv-1em { padding-top: 1em !important; padding-bottom: 1em !important;}
+    .tablet-pv-2em { padding-top: 2em !important; padding-bottom: 2em !important;}
+    .tablet-pv-3em { padding-top: 3em !important; padding-bottom: 3em !important;}
+    .tablet-pv-4em { padding-top: 4em !important; padding-bottom: 4em !important;}
+    .tablet-pv-5em { padding-top: 5em !important; padding-bottom: 5em !important;}
+    .tablet-pv-6em { padding-top: 6em !important; padding-bottom: 6em !important;}
+    .tablet-pv-7em { padding-top: 7em !important; padding-bottom: 7em !important;}
+    .tablet-pv-8em { padding-top: 8em !important; padding-bottom: 8em !important;}
+    .tablet-pv-9em { padding-top: 9em !important; padding-bottom: 9em !important;}
+    .tablet-pv-10em { padding-top: 10em !important; padding-bottom: 10em !important;}
+
+    .tablet-pv-1per { padding-top: 10% !important; padding-bottom: 10% !important;}
+    .tablet-pv-2per { padding-top: 20% !important; padding-bottom: 20% !important;}
+    .tablet-pv-3per { padding-top: 30% !important; padding-bottom: 30% !important;}
+    .tablet-pv-4per { padding-top: 40% !important; padding-bottom: 40% !important;}
+    .tablet-pv-5per { padding-top: 50% !important; padding-bottom: 50% !important;}
+    .tablet-pv-6per { padding-top: 60% !important; padding-bottom: 60% !important;}
+    .tablet-pv-7per { padding-top: 70% !important; padding-bottom: 70% !important;}
+    .tablet-pv-8per { padding-top: 80% !important; padding-bottom: 80% !important;}
+    .tablet-pv-9per { padding-top: 90% !important; padding-bottom: 90% !important;}
+    .tablet-pv-10per { padding-top: 100% !important; padding-bottom: 100% !important;}
+
+    .tablet-pv-1ch { padding-top: 1ch !important; padding-bottom: 1ch !important;}
+    .tablet-pv-2ch { padding-top: 2ch !important; padding-bottom: 2ch !important;}
+    .tablet-pv-3ch { padding-top: 3ch !important; padding-bottom: 3ch !important;}
+    .tablet-pv-4ch { padding-top: 4ch !important; padding-bottom: 4ch !important;}
+    .tablet-pv-5ch { padding-top: 5ch !important; padding-bottom: 5ch !important;}
+    .tablet-pv-6ch { padding-top: 6ch !important; padding-bottom: 6ch !important;}
+    .tablet-pv-7ch { padding-top: 7ch !important; padding-bottom: 7ch !important;}
+    .tablet-pv-8ch { padding-top: 8ch !important; padding-bottom: 8ch !important;}
+    .tablet-pv-9ch { padding-top: 9ch !important; padding-bottom: 9ch !important;}
+    .tablet-pv-10ch { padding-top: 10ch !important; padding-bottom: 10ch !important;}
+
+    .tablet-ph-0 { padding-right: 0 !important; padding-left: 0 !important;}
+
+    .tablet-ph-1px { padding-right: 1px !important; padding-left: 1px !important;}
+    .tablet-ph-2px { padding-right: 2px !important; padding-left: 2px !important;}
+    .tablet-ph-3px { padding-right: 3px !important; padding-left: 3px !important;}
+    .tablet-ph-4px { padding-right: 4px !important; padding-left: 4px !important;}
+    .tablet-ph-5px { padding-right: 5px !important; padding-left: 5px !important;}
+    .tablet-ph-6px { padding-right: 6px !important; padding-left: 6px !important;}
+    .tablet-ph-7px { padding-right: 7px !important; padding-left: 7px !important;}
+    .tablet-ph-8px { padding-right: 8px !important; padding-left: 8px !important;}
+    .tablet-ph-9px { padding-right: 9px !important; padding-left: 9px !important;}
+    .tablet-ph-10px { padding-right: 10px !important; padding-left: 10px !important;}
+
+    .tablet-ph-1pt { padding-right: 1pt !important; padding-left: 1pt !important;}
+    .tablet-ph-2pt { padding-right: 2pt !important; padding-left: 2pt !important;}
+    .tablet-ph-3pt { padding-right: 3pt !important; padding-left: 3pt !important;}
+    .tablet-ph-4pt { padding-right: 4pt !important; padding-left: 4pt !important;}
+    .tablet-ph-5pt { padding-right: 5pt !important; padding-left: 5pt !important;}
+    .tablet-ph-6pt { padding-right: 6pt !important; padding-left: 6pt !important;}
+    .tablet-ph-7pt { padding-right: 7pt !important; padding-left: 7pt !important;}
+    .tablet-ph-8pt { padding-right: 8pt !important; padding-left: 8pt !important;}
+    .tablet-ph-9pt { padding-right: 9pt !important; padding-left: 9pt !important;}
+    .tablet-ph-10pt { padding-right: 10pt !important; padding-left: 10pt !important;}
+
+    .tablet-ph-1em { padding-right: 1em !important; padding-left: 1em !important;}
+    .tablet-ph-2em { padding-right: 2em !important; padding-left: 2em !important;}
+    .tablet-ph-3em { padding-right: 3em !important; padding-left: 3em !important;}
+    .tablet-ph-4em { padding-right: 4em !important; padding-left: 4em !important;}
+    .tablet-ph-5em { padding-right: 5em !important; padding-left: 5em !important;}
+    .tablet-ph-6em { padding-right: 6em !important; padding-left: 6em !important;}
+    .tablet-ph-7em { padding-right: 7em !important; padding-left: 7em !important;}
+    .tablet-ph-8em { padding-right: 8em !important; padding-left: 8em !important;}
+    .tablet-ph-9em { padding-right: 9em !important; padding-left: 9em !important;}
+    .tablet-ph-10em { padding-right: 10em !important; padding-left: 10em !important;}
+
+    .tablet-ph-1per { padding-right: 10% !important; padding-left: 10% !important;}
+    .tablet-ph-2per { padding-right: 20% !important; padding-left: 20% !important;}
+    .tablet-ph-3per { padding-right: 30% !important; padding-left: 30% !important;}
+    .tablet-ph-4per { padding-right: 40% !important; padding-left: 40% !important;}
+    .tablet-ph-5per { padding-right: 50% !important; padding-left: 50% !important;}
+    .tablet-ph-6per { padding-right: 60% !important; padding-left: 60% !important;}
+    .tablet-ph-7per { padding-right: 70% !important; padding-left: 70% !important;}
+    .tablet-ph-8per { padding-right: 80% !important; padding-left: 80% !important;}
+    .tablet-ph-9per { padding-right: 90% !important; padding-left: 90% !important;}
+    .tablet-ph-10per { padding-right: 100% !important; padding-left: 100% !important;}
+
+    .tablet-ph-1ch { padding-right: 1ch !important; padding-left: 1ch !important;}
+    .tablet-ph-2ch { padding-right: 2ch !important; padding-left: 2ch !important;}
+    .tablet-ph-3ch { padding-right: 3ch !important; padding-left: 3ch !important;}
+    .tablet-ph-4ch { padding-right: 4ch !important; padding-left: 4ch !important;}
+    .tablet-ph-5ch { padding-right: 5ch !important; padding-left: 5ch !important;}
+    .tablet-ph-6ch { padding-right: 6ch !important; padding-left: 6ch !important;}
+    .tablet-ph-7ch { padding-right: 7ch !important; padding-left: 7ch !important;}
+    .tablet-ph-8ch { padding-right: 8ch !important; padding-left: 8ch !important;}
+    .tablet-ph-9ch { padding-right: 9ch !important; padding-left: 9ch !important;}
+    .tablet-ph-10ch { padding-right: 10ch !important; padding-left: 10ch !important;}
 }
+
 @media screen and (min-width: 769px) and  (max-width: 824px) {
     .computer-hidden{ display: none }
     .computer-show{ display: block }

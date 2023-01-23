@@ -36,7 +36,17 @@ function putStars() {
         var w = starParent.clientWidth;
         var h = starParent.scrollHeight - 2;
         var i = 1;
-        var limit = ((checkDefined(star.dataset.stars)) ? star.dataset.stars : 750)
+        if (checkDefined(star.dataset.stars)) {
+            limit = checkDefined(star.dataset.stars)
+        } else {
+            if (w > 100 && w <= 475) {
+                limit = 300;
+            } else if (w > 475 && w <= 1000) {
+                limit = 500;
+            } else if (w > 1000) {
+                limit = 750;
+            }
+        }
 
         var starColor = "orange";
 
